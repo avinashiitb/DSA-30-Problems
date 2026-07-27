@@ -1,0 +1,296 @@
+{
+  "fileId": "70cfb119-6046-4126-abc0-179ad296db5c",
+  "title": "Java Code",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "class Solution {\n\n    public int characterReplacement(String s, int k) {\n\n        int[] frequency = new int[26];\n\n        int left = 0;\n        int maxFrequency = 0;\n        int maxLength = 0;\n\n        for (int right = 0; right < s.length(); right++) {\n\n            frequency[s.charAt(right) - 'A']++;\n\n            maxFrequency = Math.max(\n                    maxFrequency,\n                    frequency[s.charAt(right) - 'A']\n            );\n\n            while ((right - left + 1) - maxFrequency > k) {\n                frequency[s.charAt(left) - 'A']--;\n                left++;\n            }\n\n            maxLength = Math.max(maxLength, right - left + 1);\n        }\n\n        return maxLength;\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        String s = Input.getString(\"s\");\n        int k = Input.getInt(\"k\");\n        int output = Input.getInt(\"output\");\n        \n        System.out.println(\"Expected: \" + output);\n      \n        Solution sol = new Solution();\n\n        System.out.println(\"Longest Substring Length: \" + sol.characterReplacement(s, k));\n    }\n}",
+        "language": "java",
+        "output": "Expected: 4\nLongest Substring Length: 4\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785047023202_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785047023202_0_0",
+                "key": "s",
+                "value": "ABAB"
+              },
+              {
+                "id": "in_1785047023202_0_1",
+                "key": "k",
+                "value": "2"
+              },
+              {
+                "id": "in_1785047023202_0_2",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785047023202_1_0",
+                "key": "s",
+                "value": "AABABBA"
+              },
+              {
+                "id": "in_1785047023202_1_1",
+                "key": "k",
+                "value": "1"
+              },
+              {
+                "id": "in_1785047023202_1_2",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785047023202_2_0",
+                "key": "s",
+                "value": "AAAA"
+              },
+              {
+                "id": "in_1785047023202_2_1",
+                "key": "k",
+                "value": "2"
+              },
+              {
+                "id": "in_1785047023202_2_2",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785047023202_3_0",
+                "key": "s",
+                "value": "ABCDE"
+              },
+              {
+                "id": "in_1785047023202_3_1",
+                "key": "k",
+                "value": "1"
+              },
+              {
+                "id": "in_1785047023202_3_2",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785047023202_4_0",
+                "key": "s",
+                "value": "BAAAB"
+              },
+              {
+                "id": "in_1785047023202_4_1",
+                "key": "k",
+                "value": "2"
+              },
+              {
+                "id": "in_1785047023202_4_2",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785047023202_5_0",
+                "key": "s",
+                "value": "ABBB"
+              },
+              {
+                "id": "in_1785047023202_5_1",
+                "key": "k",
+                "value": "2"
+              },
+              {
+                "id": "in_1785047023202_5_2",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785047023202_6_0",
+                "key": "s",
+                "value": "ABCDE"
+              },
+              {
+                "id": "in_1785047023202_6_1",
+                "key": "k",
+                "value": "0"
+              },
+              {
+                "id": "in_1785047023202_6_2",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785047023202_7_0",
+                "key": "s",
+                "value": "AAABBC"
+              },
+              {
+                "id": "in_1785047023202_7_1",
+                "key": "k",
+                "value": "2"
+              },
+              {
+                "id": "in_1785047023202_7_2",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_8",
+            "name": "Test Case 9",
+            "inputs": [
+              {
+                "id": "in_1785047023202_8_0",
+                "key": "s",
+                "value": "AABA"
+              },
+              {
+                "id": "in_1785047023202_8_1",
+                "key": "k",
+                "value": "0"
+              },
+              {
+                "id": "in_1785047023202_8_2",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_9",
+            "name": "Test Case 10",
+            "inputs": [
+              {
+                "id": "in_1785047023202_9_0",
+                "key": "s",
+                "value": "ABAA"
+              },
+              {
+                "id": "in_1785047023202_9_1",
+                "key": "k",
+                "value": "0"
+              },
+              {
+                "id": "in_1785047023202_9_2",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_10",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785047023202_10_0",
+                "key": "s",
+                "value": ""
+              },
+              {
+                "id": "in_1785047023202_10_1",
+                "key": "k",
+                "value": "2"
+              },
+              {
+                "id": "in_1785047023202_10_2",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_11",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785047023202_11_0",
+                "key": "s",
+                "value": "A"
+              },
+              {
+                "id": "in_1785047023202_11_1",
+                "key": "k",
+                "value": "0"
+              },
+              {
+                "id": "in_1785047023202_11_2",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785047023202_12",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785047023202_12_0",
+                "key": "s",
+                "value": "BBBBBB"
+              },
+              {
+                "id": "in_1785047023202_12_1",
+                "key": "k",
+                "value": "3"
+              },
+              {
+                "id": "in_1785047023202_12_2",
+                "key": "output",
+                "value": "6"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785047023202_0"
+      }
+    }
+  ],
+  "createdAt": 1785075732884,
+  "updatedAt": 1785075732884
+}

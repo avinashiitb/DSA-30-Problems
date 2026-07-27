@@ -1,0 +1,930 @@
+{
+  "fileId": "b0b198f6-9a91-4283-9385-b7ddd8e70d94",
+  "title": "Greedy Stock",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "a1b7f320-a711-4f95-ae26-7f1de8be774f",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "2. Best Time to Buy and Sell Stock",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5372bf69-09c5-4d99-b11c-4aab2f5618dd",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4c2f6684-497f-4f0a-98ef-4904317b6022",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "You are given an array ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "prices",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " where ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "prices[i]",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " is the price of a given stock on the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "iᵗʰ",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " day.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "03b0d5f1-fe79-45b9-85da-a2f858dd5da3",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "You want to maximize your profit by choosing ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "one day to buy",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " the stock and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "a different future day to sell",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " the stock.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "611363db-8cea-412d-87a5-3616a6134c2c",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return the maximum profit you can achieve. If no profit is possible, return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "0",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "04debdd4-e911-421c-8cbe-ab21aba49618",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "d58a35ea-573e-4799-8d8e-7e8ba666c970",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "95805594-138f-408e-8c20-1bcbb052d2b4",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "e2f9df9b-31f8-46e1-ac16-3b33fc7cac40",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "dcbaf9c7-88f5-4b48-8ff6-98ed694ea03e",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ce0775eb-c9ad-44bd-894b-63069fed0aec",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "f5067873-de1c-4ad6-9893-6282e0072232",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "prices = [7,1,5,3,6,4]"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "eef9bbbd-66a5-4e7a-8699-4becf550e96f",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "e322d416-a3c3-4829-be67-6445860ed612",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "5"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "d78f016a-4c0c-411b-920e-ad26a02caeb2",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "a3f61ca2-aa86-455c-9b13-46beb3ae1d34",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "Buy on day 2 (price = 1)\nSell on day 5 (price = 6)\n\nProfit = 6 - 1 = 5"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "7eb130fc-5e39-4d74-8d64-1659adfbde23",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "2bd9169e-10f1-4f94-b4a8-3b71555309e8",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "5a92e457-473f-4efe-9002-1b08bf8c4ba1",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "0d590233-6a07-4f99-a083-404ddb70bdfd",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "prices = [7,6,4,3,1]"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "b30b9cb8-da3f-4587-aedf-47215747147b",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "6f0439ab-2d4e-4e21-99f8-8d9752cd5796",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "0"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "0c104e86-0e2f-4cb7-bca8-2353eed468ee",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "88a05580-d681-4455-8d06-29d3ac907f0c",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "The stock price keeps decreasing.\nNo profitable transaction is possible."
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fe574049-34a1-41d4-a3f8-867ec18ec850",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "f34efdb8-2dd8-44f9-9736-abbd3779eb4f",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "076b9590-1d26-4499-aa70-a63d2fe33b3b",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The key idea is to keep track of the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "lowest price seen so far",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " while traversing the array.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "98de4eb8-23d1-4cf1-adb1-68ebc0a4535b",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "41e0c79d-c019-4087-9338-ac5a99113843",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "788b35b9-752c-4249-aedd-4ec73c034abb",
+            "type": "addDoc",
+            "props": {
+              "fileId": "2e36f777-4a25-4fac-9ad5-46f45aac9ccd",
+              "title": "Greedy Stock Code",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "09c44f46-cac2-49c8-8137-7bc15d7bbf07",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "630a67fe-c6e8-4b92-923e-aedfb73acf15",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1a01c298-467e-4fb8-b26a-97f3032d04ea",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(1)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "1abb77b1-2d0f-4380-ab50-f6e212dd7643",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "4cd8baa0-ac56-46fc-bba9-e5641e67da56",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6a14bc9e-41a0-4973-9964-df64aa75a5a8",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "This problem demonstrates how to optimize a brute-force solution.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "cf85a75a-95df-497f-a1b9-0e411be796a0",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Instead of checking every possible buy and sell combination (",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n²)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": "), maintain the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "minimum price seen so far",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and calculate the profit at each step. This reduces the solution to ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time while using ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "constant extra space",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "abbf7adb-17e8-4c9f-b997-68e9d388ab99",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "87252ad9-2fff-4736-b785-53b049b908c0",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d574dfda-b088-48c7-83a9-71e5be7a36df",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Buy at the lowest price seen so far.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9dd826d4-cbf1-45d4-91f6-272a0d71e5bd",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Calculate the profit for every future selling price.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c4657f7c-a866-4c42-9218-e48bcc7d96c2",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Update the maximum profit during a single traversal.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2d83a65c-f018-44d4-87bd-e5f03cf8460c",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If no profitable transaction exists, return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "0",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "112951e8-ef5d-456d-9fa1-a16e42618958",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "This is a classic ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "array optimization",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " problem frequently asked in coding interviews.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785075732884,
+  "updatedAt": 1785075732884
+}

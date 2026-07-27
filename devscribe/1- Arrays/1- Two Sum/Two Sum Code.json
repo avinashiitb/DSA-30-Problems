@@ -1,0 +1,296 @@
+{
+  "fileId": "f6bf8fec-b44f-454d-bd84-472bc123938f",
+  "title": "Two Sum Code",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "import java.util.*;\n\nclass Solution {\n    public void solve(int[] A, int target) {\n        HashMap<Integer, Integer> Map = new HashMap<>();\n\n        for(int i = 0; i< A.length; i++) {\n          int X = target - A[i];\n          if(Map.containsKey(X)) {\n            int j = Map.get(X);\n            System.out.println(\"Pair: [\" + j + \", \" + i + \"]\");\n          }\n          Map.put(A[i], i);\n        }\n        \n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"nums\"); \n        int target = Input.getInt(\"target\");\n        int[] output = Input.getIntArray(\"output\");\n      \n        System.out.println(\"Expected: \"+ Arrays.toString(output));\n      \n        Solution sol = new Solution();\n\n        sol.solve(nums, target);\n    }\n}",
+        "language": "java",
+        "output": "Expected: [0, 1]\nPair: [0, 1]\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785044934411_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785044934411_0_0",
+                "key": "nums",
+                "value": "[2, 7, 11, 15]"
+              },
+              {
+                "id": "in_1785044934411_0_1",
+                "key": "target",
+                "value": "9"
+              },
+              {
+                "id": "in_1785044934411_0_2",
+                "key": "output",
+                "value": "[0, 1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785044934411_1_0",
+                "key": "nums",
+                "value": "[3, 2, 4]"
+              },
+              {
+                "id": "in_1785044934411_1_1",
+                "key": "target",
+                "value": "6"
+              },
+              {
+                "id": "in_1785044934411_1_2",
+                "key": "output",
+                "value": "[1, 2]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785044934411_2_0",
+                "key": "nums",
+                "value": "[3, 3]"
+              },
+              {
+                "id": "in_1785044934411_2_1",
+                "key": "target",
+                "value": "6"
+              },
+              {
+                "id": "in_1785044934411_2_2",
+                "key": "output",
+                "value": "[0, 1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785044934411_3_0",
+                "key": "nums",
+                "value": "[-3, 4, 3, 90]"
+              },
+              {
+                "id": "in_1785044934411_3_1",
+                "key": "target",
+                "value": "0"
+              },
+              {
+                "id": "in_1785044934411_3_2",
+                "key": "output",
+                "value": "[0, 2]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785044934411_4_0",
+                "key": "nums",
+                "value": "[-1, -2, -3, -4, -5]"
+              },
+              {
+                "id": "in_1785044934411_4_1",
+                "key": "target",
+                "value": "-8"
+              },
+              {
+                "id": "in_1785044934411_4_2",
+                "key": "output",
+                "value": "[2, 4]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785044934411_5_0",
+                "key": "nums",
+                "value": "[0, 4, 3, 0]"
+              },
+              {
+                "id": "in_1785044934411_5_1",
+                "key": "target",
+                "value": "0"
+              },
+              {
+                "id": "in_1785044934411_5_2",
+                "key": "output",
+                "value": "[0, 3]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785044934411_6_0",
+                "key": "nums",
+                "value": "[1000000, 500000, 300000, 700000]"
+              },
+              {
+                "id": "in_1785044934411_6_1",
+                "key": "target",
+                "value": "1700000"
+              },
+              {
+                "id": "in_1785044934411_6_2",
+                "key": "output",
+                "value": "[0, 3]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785044934411_7_0",
+                "key": "nums",
+                "value": "[5, 75, 25]"
+              },
+              {
+                "id": "in_1785044934411_7_1",
+                "key": "target",
+                "value": "100"
+              },
+              {
+                "id": "in_1785044934411_7_2",
+                "key": "output",
+                "value": "[1, 2]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_8",
+            "name": "Test Case 9",
+            "inputs": [
+              {
+                "id": "in_1785044934411_8_0",
+                "key": "nums",
+                "value": "[1, 2, 3, 4, 5]"
+              },
+              {
+                "id": "in_1785044934411_8_1",
+                "key": "target",
+                "value": "9"
+              },
+              {
+                "id": "in_1785044934411_8_2",
+                "key": "output",
+                "value": "[3, 4]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_9",
+            "name": "Test Case 10",
+            "inputs": [
+              {
+                "id": "in_1785044934411_9_0",
+                "key": "nums",
+                "value": "[8, 1, 6, 2, 9]"
+              },
+              {
+                "id": "in_1785044934411_9_1",
+                "key": "target",
+                "value": "10"
+              },
+              {
+                "id": "in_1785044934411_9_2",
+                "key": "output",
+                "value": "[3, 0]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_10",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785044934411_10_0",
+                "key": "nums",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785044934411_10_1",
+                "key": "target",
+                "value": "5"
+              },
+              {
+                "id": "in_1785044934411_10_2",
+                "key": "output",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_11",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785044934411_11_0",
+                "key": "nums",
+                "value": "[5]"
+              },
+              {
+                "id": "in_1785044934411_11_1",
+                "key": "target",
+                "value": "5"
+              },
+              {
+                "id": "in_1785044934411_11_2",
+                "key": "output",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785044934411_12",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785044934411_12_0",
+                "key": "nums",
+                "value": "[1, 2, 3]"
+              },
+              {
+                "id": "in_1785044934411_12_1",
+                "key": "target",
+                "value": "10"
+              },
+              {
+                "id": "in_1785044934411_12_2",
+                "key": "output",
+                "value": "[]"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785044934411_0"
+      }
+    }
+  ],
+  "createdAt": 1785075732884,
+  "updatedAt": 1785075732884
+}
