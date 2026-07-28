@@ -1,0 +1,1127 @@
+{
+  "fileId": "150f6714-7a66-49c3-97ef-6ba998e69c6d",
+  "_id": "150f6714-7a66-49c3-97ef-6ba998e69c6d",
+  "title": "Linked List Cycle Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "f13afed4-f2f4-4fc3-96a7-1aa3e5ad03c1",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "15. Linked List Cycle",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f59ae55f-8149-40e9-bdce-a186e003b2ae",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e1b5882d-57d0-4bc9-b033-0dbb2c313dc7",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "head",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " of a linked list, determine if the linked list has a cycle.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f34adbea-636b-4cee-8b6f-40673de429a3",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A cycle exists if some node in the list can be reached again by continuously following the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "next",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " pointer.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "85e9c681-e744-425f-85e9-36a65ffde32c",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "true",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " if there is a cycle; otherwise, return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "false",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "84f330f3-c674-4ec6-bae6-ada25ad16a87",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "1cc93180-72cd-4ad5-9a31-88e0dca5daac",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "74f72a2c-981b-49b7-9d24-a6dff6e63aa5",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "9f9dec00-f015-488c-a054-f77ac49015ed",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "97389b55-450a-4eb4-8ed0-f1b0ff6ab1d8",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "b0d5e4f9-37c4-4e30-8afd-8114eba26028",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "3f29a725-0c64-4c79-ae9a-7042cf1e4be7",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "head = [3,2,0,-4]\npos = 1",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "b002edeb-38bd-46e2-a89d-33031ae48944",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "8d0645e6-f125-4713-a0f2-7e4e5f0013e7",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "true",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "edb1740f-4e17-479d-a859-9a2f58caf136",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "86916dbf-be4e-43db-a80d-5020103f511d",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "The last node points back to the node at index 1.\n\n3 → 2 → 0 → -4\n    ↑         |\n    |_________|",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "2d3c8b66-1a48-4dd7-9563-faad0aa4ddd5",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "24027bed-db66-4a7d-88cc-adcc1514c2dd",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "87bea08d-24bb-4fc1-8b60-3eb5636bc01e",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "a28b3553-462c-4c68-b135-7d731865bcc5",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "3c43e7c2-337b-44a4-b2a5-feb4329cfe96",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "head = [1,2]\npos = 0",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "02161bfa-a5a6-4112-b74b-f98854cc23a1",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "a99078e7-04e7-405f-935f-e712d05c7ea7",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "true",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "5ab65c7a-0df1-4bff-bd25-ae7b0f09bd34",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "c51ff805-8103-4f85-8be0-495ec288000b",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "482044e5-286e-404c-b56a-f7ac0c207044",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 3",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "629b5cea-3b32-4b10-8705-7b19d22b4e03",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "e2888470-288c-4ab1-b14d-5c907f45f3f3",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "head = [1]\npos = -1",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "79caff92-53f7-4547-96d7-690186370fb5",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "8a2b9859-e205-4465-8f66-ebbc1f1f2586",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "false",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "2cfb8862-4b4c-4568-b9f4-73f193a4d5ee",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "e50c4c12-dc8b-4359-94a8-1bd960faeab4",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f384e552-d28a-4aac-ade0-17ac77936200",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use Floyd's Cycle Detection Algorithm (also called the Tortoise and Hare Algorithm).",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "98263a23-9e46-4cf7-b8f4-b31ae76e8d0f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Maintain two pointers:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e6789503-7ef1-4922-af29-a2195a7e9718",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Slow pointer moves one step at a time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "13a27311-3238-4422-9ab4-ae48b5d9c4e3",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Fast pointer moves two steps at a time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "64864214-c08c-43f4-8413-8184f23c00c8",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If a cycle exists, the two pointers will eventually meet.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e358f53c-8302-49eb-82e3-0a4f8060a8d5",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the fast pointer reaches ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", there is no cycle.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "951404b9-8e3e-44ad-aa7d-557e0e73583c",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "19da6052-f02b-47f9-bd12-d4738a50dbf1",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fa7f2c03-99b5-4e0c-96f9-b3b743a744f6",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "head = [3,2,0,-4]\npos = 1\n\nSlow = 3\nFast = 3\n\nMove\n\nSlow = 2\nFast = 0\n\nMove\n\nSlow = 0\nFast = 2\n\nMove\n\nSlow = -4\nFast = -4\n\nPointers meet\n\nReturn true",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "7578c6aa-98f0-4b1c-8b47-d06926c3b9ad",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "522a1d09-a754-4df0-bca3-4e2c250f7d80",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0dc7bbc6-0de5-43f2-b408-7dd836da8072",
+            "type": "addDoc",
+            "props": {
+              "fileId": "ca184c86-cbe1-465d-831c-6b2badab578d",
+              "title": "Linked List Cycle Code",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "bfd40bb8-a8d8-4683-8423-c496b2fbddf7",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "9bd3148a-fac2-467d-b916-421731670d9a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "008c6906-76f9-4e75-acd4-8d64670c4d7a",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(1)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "6f1e3841-a619-4609-aa45-28e2a7e2372f",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "53e41710-1715-416e-84b0-186bf5a325c4",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "cbf0dd0f-b0fd-402e-b91f-58214c48337e",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Do ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "not",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " use a HashSet unless specifically asked.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6cb7f812-1da9-4242-8e80-a6aa1513daeb",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The optimal solution is Floyd's Cycle Detection Algorithm using two pointers.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4b1c3ffe-6d80-4181-80fe-4f3d40974377",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the fast pointer catches the slow pointer, a cycle exists.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "35b4975e-86cc-4e85-a053-41c7654f4610",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "9903a8d7-7448-419d-b474-c7c9a2ee25c0",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "865664ef-f5c1-47a4-8fdf-b369dca11b16",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use two pointers.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "624c1c36-d7f5-497a-83dc-6876a09cf4e5",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Slow moves one node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "75b6b560-2d54-43bc-869a-e1ad9cd07a63",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Fast moves two nodes.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b6b00aa6-79a0-4f5c-8e7d-845bbb0673fa",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If they meet, a cycle exists.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2e33e920-2f33-4218-bda1-28dd5f99c6d8",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If fast reaches ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", there is no cycle.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "3ca26a7a-9a48-462b-b547-ad7381a58b01",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(1)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " extra space.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785263355146,
+  "updatedAt": 1785263616352
+}

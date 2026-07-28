@@ -1,0 +1,232 @@
+{
+  "fileId": "cda5bb0f-8e19-4bd2-ade9-3680a2779867",
+  "_id": "cda5bb0f-8e19-4bd2-ade9-3680a2779867",
+  "title": "Reverse LinkedList Code",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "class ListNode {\n\n    int val;\n    ListNode next;\n\n    ListNode(int val) {\n        this.val = val;\n    }\n}\n\nclass Solution {\n\n    public ListNode reverseList(ListNode head) {\n\n        ListNode previous = null;\n        ListNode current = head;\n\n        while (current != null) {\n\n            ListNode next = current.next;\n\n            current.next = previous;\n\n            previous = current;\n\n            current = next;\n        }\n\n        return previous;\n    }\n\n    // Helper method to create Linked List from array\n    private static ListNode buildList(int[] values) {\n\n        if (values.length == 0) {\n            return null;\n        }\n\n        ListNode head = new ListNode(values[0]);\n        ListNode current = head;\n\n        for (int i = 1; i < values.length; i++) {\n            current.next = new ListNode(values[i]);\n            current = current.next;\n        }\n\n        return head;\n    }\n\n    // Helper method to print Linked List\n    private static void printList(ListNode head) {\n\n        if (head == null) {\n            System.out.println(\"[]\");\n            return;\n        }\n\n        System.out.print(\"[\");\n\n        while (head != null) {\n\n            System.out.print(head.val);\n\n            if (head.next != null) {\n                System.out.print(\",\");\n            }\n\n            head = head.next;\n        }\n\n        System.out.println(\"]\");\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n\n        // This is custom code to read Test case in Devscribe\n        int[] head = Input.getIntArray(\"head\");\n        int[] output = Input.getIntArray(\"output\");\n\n        ListNode list = buildList(head);\n\n        Solution sol = new Solution();\n\n        ListNode result = sol.reverseList(list);\n\n        System.out.print(\"Expected: \");\n        printList(buildList(output));\n\n        System.out.print(\"Actual: \");\n        printList(result);\n    }\n}",
+        "language": "java",
+        "output": "Expected: [5,4,3,2,1]\nActual: [5,4,3,2,1]\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785262517690_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785262517690_0_0",
+                "key": "head",
+                "value": "[1,2,3,4,5]"
+              },
+              {
+                "id": "in_1785262517690_0_1",
+                "key": "output",
+                "value": "[5,4,3,2,1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785262517690_1_0",
+                "key": "head",
+                "value": "[1,2]"
+              },
+              {
+                "id": "in_1785262517690_1_1",
+                "key": "output",
+                "value": "[2,1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785262517690_2_0",
+                "key": "head",
+                "value": "[1]"
+              },
+              {
+                "id": "in_1785262517690_2_1",
+                "key": "output",
+                "value": "[1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785262517690_3_0",
+                "key": "head",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785262517690_3_1",
+                "key": "output",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785262517690_4_0",
+                "key": "head",
+                "value": "[10,20,30]"
+              },
+              {
+                "id": "in_1785262517690_4_1",
+                "key": "output",
+                "value": "[30,20,10]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785262517690_5_0",
+                "key": "head",
+                "value": "[7,8,9,10]"
+              },
+              {
+                "id": "in_1785262517690_5_1",
+                "key": "output",
+                "value": "[10,9,8,7]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785262517690_6_0",
+                "key": "head",
+                "value": "[100]"
+              },
+              {
+                "id": "in_1785262517690_6_1",
+                "key": "output",
+                "value": "[100]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785262517690_7_0",
+                "key": "head",
+                "value": "[5,4,3,2,1]"
+              },
+              {
+                "id": "in_1785262517690_7_1",
+                "key": "output",
+                "value": "[1,2,3,4,5]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_8",
+            "name": "Test Case 9",
+            "inputs": [
+              {
+                "id": "in_1785262517690_8_0",
+                "key": "head",
+                "value": "[9,9,9]"
+              },
+              {
+                "id": "in_1785262517690_8_1",
+                "key": "output",
+                "value": "[9,9,9]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_9",
+            "name": "Test Case 10",
+            "inputs": [
+              {
+                "id": "in_1785262517690_9_0",
+                "key": "head",
+                "value": "[11,22,33,44]"
+              },
+              {
+                "id": "in_1785262517690_9_1",
+                "key": "output",
+                "value": "[44,33,22,11]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_10",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785262517690_10_0",
+                "key": "head",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785262517690_10_1",
+                "key": "output",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_11",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785262517690_11_0",
+                "key": "head",
+                "value": "[1]"
+              },
+              {
+                "id": "in_1785262517690_11_1",
+                "key": "output",
+                "value": "[1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785262517690_12",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785262517690_12_0",
+                "key": "head",
+                "value": "[1,2]"
+              },
+              {
+                "id": "in_1785262517690_12_1",
+                "key": "output",
+                "value": "[2,1]"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785262517690_0"
+      }
+    }
+  ],
+  "createdAt": 1785262460575,
+  "updatedAt": 1785262527761
+}

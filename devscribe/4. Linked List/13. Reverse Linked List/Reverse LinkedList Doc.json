@@ -1,0 +1,1216 @@
+{
+  "fileId": "890530b8-6582-411b-84c0-b2721da8cb52",
+  "_id": "890530b8-6582-411b-84c0-b2721da8cb52",
+  "title": "Reverse LinkedList Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "674ded33-3638-4451-8a85-1bd8c9fd0531",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "13. Reverse Linked List",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "611ad4ef-842f-49a8-8775-23ed5a25ff7f",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6e2c37ee-7862-4ff6-a9c4-aa053aa7dde1",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "head",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " of a singly linked list, reverse the list and return the reversed list.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e0330a44-9207-4d10-98e0-a63a64b805c5",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "3d9ab107-5cc3-4be3-8628-47ee735533bb",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "effdd8e9-8d54-45f1-8002-fdc7b07f6df5",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "f8007fcc-2bd7-45b3-96d9-e53bbb7926bb",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "06adf964-785b-4518-bf97-e0376d8e6806",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "7568db66-ca9c-4f4a-9b03-54e698fe5e93",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "a7e6825e-bd6d-4586-8615-c2bf61906438",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "head = [1,2,3,4,5]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "08c473c3-8f83-4318-af20-64acb8ebda9d",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "08efac55-b116-46b8-8295-6ea1e7e4b98d",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[5,4,3,2,1]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "d15ef6e0-c8f0-4e34-b419-fb6b5e5b677d",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "7f2e532d-f91a-4b85-8e9a-99c9d88e6c7f",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "7dc59fc0-4b21-49e7-a142-152c3ca13253",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "2e1ec0f5-f9b6-41f6-95f5-396bfa5ebf41",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "73f28f4b-ffe4-4616-8134-e8cabf0b1747",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "head = [1,2]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "228dbdeb-0953-4c08-baaf-652eb24e22b9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "78a393db-c48e-473a-b641-0677f47b3484",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[2,1]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "38dbfed3-5bb1-4c9b-ae24-d4e5fff7c918",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "39e15684-783c-4096-8d47-1e5f1b8efef7",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "b5d070be-ee9d-4a4f-b6b1-08c60e290956",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 3",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "40f986f2-d7a6-4d63-89c1-182587def515",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "379fa00d-660b-406d-9dce-1c71d8a34bbf",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "head = []",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "65fb156f-57b2-4644-8b16-2adf7c840ae5",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "912b9fd8-0c4a-4d51-846c-ec17788e58c0",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "721ef7fd-31d5-4d82-957f-976527b472c9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "20848174-f08e-4d53-8d3a-b990ed7501a7",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e5ea6f13-20de-4937-963a-48df59e8d5f1",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "We can reverse a linked list using three pointers.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7b6cecd6-ae5e-49a9-bce4-3efe3e13908b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "previous",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " stores the previous node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b4e715ba-9b1e-494a-a5cf-4c0dc7ca0771",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "current",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " points to the current node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5bbeedab-b5fd-4301-8f4c-158aaf8c2658",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "next",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " stores the next node before changing the link.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4d5eba4f-585e-4919-b2aa-a67765eaa06a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "941b5037-fd63-4c51-90d7-3816e4c1e6e9",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Initialize:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "ddfda64f-71fa-4f58-88ec-4300ccd8f7e2",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "previous = null",
+                    "styles": {
+                      "code": true
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "99faaad2-8158-4148-8ea1-9046f7886478",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "current = head",
+                    "styles": {
+                      "code": true
+                    }
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "6042fade-14a3-4c37-bc01-ebb2138f110f",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store the next node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6b15beae-4a5a-4b06-a3b1-5bf7718f0203",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Reverse the current node's pointer.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0723519f-a874-4841-9850-b0aad527af32",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Move both pointers one step ahead.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "aad311a8-e1fd-4d6a-803d-080ceab6bfd4",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Repeat until ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "current",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " becomes ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "85d0b1d8-96cd-44f0-a29a-5f4dce865943",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "previous",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", which becomes the new head.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e1c7b7bf-08af-4833-ba81-26bec4a04482",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "57bedfdb-9d47-4fcb-aac9-1653e6765225",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9a1955dd-7034-4005-9f04-c955e83d9862",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "Original List\n\n1 → 2 → 3 → null\n\nprevious = null\ncurrent = 1\n\nStep 1\n\nnext = 2\n1 → null\n\nprevious = 1\ncurrent = 2\n\n-------------------\n\nStep 2\n\nnext = 3\n2 → 1 → null\n\nprevious = 2\ncurrent = 3\n\n-------------------\n\nStep 3\n\n3 → 2 → 1 → null\n\nprevious = 3\ncurrent = null\n\nReturn previous",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "37c39258-1e2a-465c-a949-6e5c617a8dcd",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "cbe13e9d-8fa8-49a3-81d6-5a1db91d36dd",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c9749da7-23bc-4f6d-8161-5bf83d93e888",
+            "type": "addDoc",
+            "props": {
+              "fileId": "cda5bb0f-8e19-4bd2-ade9-3680a2779867",
+              "title": "Reverse LinkedList Code",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "b912ee8e-fd46-49a9-8334-4b012ab7ff26",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "24bf5959-4026-4a12-bcbe-f366e9861fce",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7933a349-bb76-4b2d-9a92-6db6d7ed5efe",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(1)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "eb0f616d-596e-4058-9997-f82c9c6c2348",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "412229f4-6e8b-47ee-8b09-d92a6c77775a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "30c44f6f-b108-46b5-b2d5-8147e13101b8",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The important part is not to lose the remaining list while reversing the current node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "bcd7d468-c911-433f-b877-a13ab1339e01",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Always save the next node before changing the pointer.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b02f0c7c-7c9e-4350-a99e-b731778c6b71",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "ListNode next = current.next;\ncurrent.next = previous;",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "356360dd-d1bf-4c7b-ab4d-531c943deafd",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "This allows the traversal to continue safely.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "51c216d6-9148-40b3-afa8-6cf8479d836d",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "283dfdcc-ac9d-45ff-95e7-49f6ec16d85c",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "81a42746-f92e-4afc-8308-9c68e9887995",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use three pointers: ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "previous",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "current",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "next",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c6d23530-80f1-4752-8d4c-42c344c24409",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Reverse one link at a time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "61e3cbf6-c513-4cf5-b95e-b8c097f49cfa",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Save the next node before modifying pointers.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4ead2f73-9d5a-455a-9ebe-b70c3bc65e3b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "previous",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " as the new head.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b2635ba7-44bd-422b-b646-aec4a9e870f5",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(1)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " extra space.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785262150937,
+  "updatedAt": 1785263033478
+}
