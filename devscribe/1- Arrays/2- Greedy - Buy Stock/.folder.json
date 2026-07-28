@@ -1,7 +1,8 @@
 {
-  "folderId": "ffe5830b-1436-4296-92d0-74ffcc75900d",
-  "parentId": "f633b2e0-8639-4d65-9df2-73d123d9bed5",
+  "folderId": "af9ad9a9-9d04-4cae-be2a-3aa916f199bd",
+  "_id": "af9ad9a9-9d04-4cae-be2a-3aa916f199bd",
+  "parentId": "387058c7-0591-440d-9354-64e2cde35186",
   "name": "2: Greedy - Buy Stock",
-  "createdAt": 1785075732884,
-  "updatedAt": 1785075732884
+  "createdAt": 1785210624223,
+  "updatedAt": 1785210624223
 }

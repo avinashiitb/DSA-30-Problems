@@ -1,7 +1,8 @@
 {
-  "folderId": "d23544b2-6a7d-4d6c-9aa8-5edbcb32ac19",
-  "parentId": "f633b2e0-8639-4d65-9df2-73d123d9bed5",
+  "folderId": "08f0049c-6416-4831-8ffc-96f2332499ca",
+  "_id": "08f0049c-6416-4831-8ffc-96f2332499ca",
+  "parentId": "387058c7-0591-440d-9354-64e2cde35186",
   "name": "5: Maximum Subarray",
-  "createdAt": 1785075732884,
-  "updatedAt": 1785075732884
+  "createdAt": 1785210624223,
+  "updatedAt": 1785210624223
 }

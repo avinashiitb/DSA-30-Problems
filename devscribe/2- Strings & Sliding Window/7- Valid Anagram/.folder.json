@@ -1,7 +1,8 @@
 {
-  "folderId": "a0eb7fb6-9276-428e-8436-f174128292c4",
-  "parentId": "54dfb983-77e3-474f-9853-ddd33c119796",
+  "folderId": "bfee76b2-4c1b-4338-bc6f-e175e1a0e7b9",
+  "_id": "bfee76b2-4c1b-4338-bc6f-e175e1a0e7b9",
+  "parentId": "cd1c463e-8fe4-4ff1-a1fe-f44467d88e3b",
   "name": "7: Valid Anagram",
-  "createdAt": 1785075732884,
-  "updatedAt": 1785075732884
+  "createdAt": 1785210624223,
+  "updatedAt": 1785210624223
 }
