@@ -1,0 +1,232 @@
+{
+  "fileId": "db8a73ed-2402-418e-a2e0-58cc9e2b7415",
+  "_id": "db8a73ed-2402-418e-a2e0-58cc9e2b7415",
+  "title": "Min Stack code",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "import java.util.*;\n\nclass MinStack {\n\n    private Stack<Integer> stack;\n    private Stack<Integer> minStack;\n\n    public MinStack() {\n        stack = new Stack<>();\n        minStack = new Stack<>();\n    }\n\n    public void push(int val) {\n\n        stack.push(val);\n\n        if (minStack.isEmpty() || val <= minStack.peek()) {\n            minStack.push(val);\n        }\n    }\n\n    public void pop() {\n\n        if (stack.peek().equals(minStack.peek())) {\n            minStack.pop();\n        }\n\n        stack.pop();\n    }\n\n    public int top() {\n        return stack.peek();\n    }\n\n    public int getMin() {\n        return minStack.peek();\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n\n        // This is custom code to read Test case in Devscribe\n        String[] operations = Input.getArray(\"operations\");\n        String[] values = Input.getArray(\"values\");\n\n        MinStack minStack = new MinStack();\n\n        for (int i = 0; i < operations.length; i++) {\n\n        String operation = operations[i].replace(\"\\\"\", \"\").trim();\n    \n        switch (operation) {\n    \n            case \"push\":\n                int value = Integer.parseInt(values[i].replace(\"\\\"\", \"\").trim());\n                minStack.push(value);\n                System.out.println(\"push(\" + value + \")\");\n                break;\n    \n            case \"pop\":\n                minStack.pop();\n                System.out.println(\"pop()\");\n                break;\n    \n            case \"top\":\n                System.out.println(\"top() = \" + minStack.top());\n                break;\n    \n            case \"getMin\":\n                System.out.println(\"getMin() = \" + minStack.getMin());\n                break;\n        }\n}\n    }\n}",
+        "language": "java",
+        "output": "push(5)\npush(3)\ngetMin() = 3\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785297514572_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785297514572_0_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_0_1",
+                "key": "values",
+                "value": "[\"-2\",\"0\",\"-3\",\"\",\"\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785297514572_1_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_1_1",
+                "key": "values",
+                "value": "[\"5\",\"3\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785297514572_2_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"pop\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_2_1",
+                "key": "values",
+                "value": "[\"2\",\"1\",\"4\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785297514572_3_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_3_1",
+                "key": "values",
+                "value": "[\"10\",\"20\",\"5\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785297514572_4_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"pop\",\"top\"]"
+              },
+              {
+                "id": "in_1785297514572_4_1",
+                "key": "values",
+                "value": "[\"7\",\"8\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785297514572_5_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"pop\",\"pop\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_5_1",
+                "key": "values",
+                "value": "[\"5\",\"4\",\"3\",\"\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785297514572_6_0",
+                "key": "operations",
+                "value": "[\"push\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_6_1",
+                "key": "values",
+                "value": "[\"100\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785297514572_7_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"top\"]"
+              },
+              {
+                "id": "in_1785297514572_7_1",
+                "key": "values",
+                "value": "[\"1\",\"2\",\"3\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_8",
+            "name": "Test Case 9",
+            "inputs": [
+              {
+                "id": "in_1785297514572_8_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_8_1",
+                "key": "values",
+                "value": "[\"9\",\"7\",\"8\",\"\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_9",
+            "name": "Test Case 10",
+            "inputs": [
+              {
+                "id": "in_1785297514572_9_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"pop\",\"top\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_9_1",
+                "key": "values",
+                "value": "[\"4\",\"2\",\"6\",\"\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_10",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785297514572_10_0",
+                "key": "operations",
+                "value": "[\"push\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_10_1",
+                "key": "values",
+                "value": "[\"-1\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_11",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785297514572_11_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"pop\",\"getMin\"]"
+              },
+              {
+                "id": "in_1785297514572_11_1",
+                "key": "values",
+                "value": "[\"2\",\"2\",\"\",\"\"]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785297514572_12",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785297514572_12_0",
+                "key": "operations",
+                "value": "[\"push\",\"push\",\"push\",\"pop\",\"pop\",\"top\"]"
+              },
+              {
+                "id": "in_1785297514572_12_1",
+                "key": "values",
+                "value": "[\"1\",\"2\",\"3\",\"\",\"\",\"\"]"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785297514572_1"
+      }
+    }
+  ],
+  "createdAt": 1785297485728,
+  "updatedAt": 1785298330508
+}

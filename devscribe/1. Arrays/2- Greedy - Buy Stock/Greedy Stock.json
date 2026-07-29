@@ -1,7 +1,7 @@
 {
-  "fileId": "150f6714-7a66-49c3-97ef-6ba998e69c6d",
-  "_id": "150f6714-7a66-49c3-97ef-6ba998e69c6d",
-  "title": "Linked List Cycle Doc",
+  "fileId": "2e4ce09b-5bda-4a2e-a8f1-6affc351bd93",
+  "_id": "2e4ce09b-5bda-4a2e-a8f1-6affc351bd93",
+  "title": "Greedy Stock",
   "fileType": "document-editor",
   "version": "1.0.0",
   "blocks": [
@@ -10,7 +10,7 @@
       "data": {
         "blocks": [
           {
-            "id": "f13afed4-f2f4-4fc3-96a7-1aa3e5ad03c1",
+            "id": "a1b7f320-a711-4f95-ae26-7f1de8be774f",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -22,14 +22,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "15. Linked List Cycle",
+                "text": "2. Best Time to Buy and Sell Stock",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "f59ae55f-8149-40e9-bdce-a186e003b2ae",
+            "id": "5372bf69-09c5-4d99-b11c-4aab2f5618dd",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -48,7 +48,7 @@
             "children": []
           },
           {
-            "id": "e1b5882d-57d0-4bc9-b033-0dbb2c313dc7",
+            "id": "4c2f6684-497f-4f0a-98ef-4904317b6022",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -58,26 +58,50 @@
             "content": [
               {
                 "type": "text",
-                "text": "Given the ",
+                "text": "You are given an array ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "head",
+                "text": "prices",
                 "styles": {
                   "code": true
                 }
               },
               {
                 "type": "text",
-                "text": " of a linked list, determine if the linked list has a cycle.",
+                "text": " where ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "prices[i]",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " is the price of a given stock on the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "iᵗʰ",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " day.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "f34adbea-636b-4cee-8b6f-40673de429a3",
+            "id": "03b0d5f1-fe79-45b9-85da-a2f858dd5da3",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -87,26 +111,38 @@
             "content": [
               {
                 "type": "text",
-                "text": "A cycle exists if some node in the list can be reached again by continuously following the ",
+                "text": "You want to maximize your profit by choosing ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "next",
+                "text": "one day to buy",
                 "styles": {
-                  "code": true
+                  "bold": true
                 }
               },
               {
                 "type": "text",
-                "text": " pointer.",
+                "text": " the stock and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "a different future day to sell",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " the stock.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "85e9c681-e744-425f-85e9-36a65ffde32c",
+            "id": "611363db-8cea-412d-87a5-3616a6134c2c",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -116,24 +152,12 @@
             "content": [
               {
                 "type": "text",
-                "text": "Return ",
+                "text": "Return the maximum profit you can achieve. If no profit is possible, return ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "true",
-                "styles": {
-                  "code": true
-                }
-              },
-              {
-                "type": "text",
-                "text": " if there is a cycle; otherwise, return ",
-                "styles": {}
-              },
-              {
-                "type": "text",
-                "text": "false",
+                "text": "0",
                 "styles": {
                   "code": true
                 }
@@ -147,13 +171,13 @@
             "children": []
           },
           {
-            "id": "84f330f3-c674-4ec6-bae6-ada25ad16a87",
+            "id": "04debdd4-e911-421c-8cbe-ab21aba49618",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "1cc93180-72cd-4ad5-9a31-88e0dca5daac",
+            "id": "d58a35ea-573e-4799-8d8e-7e8ba666c970",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -172,19 +196,19 @@
             "children": []
           },
           {
-            "id": "74f72a2c-981b-49b7-9d24-a6dff6e63aa5",
+            "id": "95805594-138f-408e-8c20-1bcbb052d2b4",
             "type": "column_list",
             "props": {},
             "children": [
               {
-                "id": "9f9dec00-f015-488c-a054-f77ac49015ed",
+                "id": "e2f9df9b-31f8-46e1-ac16-3b33fc7cac40",
                 "type": "column",
                 "props": {
                   "width": "1"
                 },
                 "children": [
                   {
-                    "id": "97389b55-450a-4eb4-8ed0-f1b0ff6ab1d8",
+                    "id": "dcbaf9c7-88f5-4b48-8ff6-98ed694ea03e",
                     "type": "heading",
                     "props": {
                       "backgroundColor": "default",
@@ -203,7 +227,7 @@
                     "children": []
                   },
                   {
-                    "id": "b0d5e4f9-37c4-4e30-8afd-8114eba26028",
+                    "id": "ce0775eb-c9ad-44bd-894b-63069fed0aec",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -222,17 +246,16 @@
                     "children": []
                   },
                   {
-                    "id": "3f29a725-0c64-4c79-ae9a-7042cf1e4be7",
+                    "id": "f5067873-de1c-4ad6-9893-6282e0072232",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "head = [3,2,0,-4]\npos = 1",
-                      "wordWrap": "true"
+                      "code": "prices = [7,1,5,3,6,4]"
                     },
                     "children": []
                   },
                   {
-                    "id": "b002edeb-38bd-46e2-a89d-33031ae48944",
+                    "id": "eef9bbbd-66a5-4e7a-8699-4becf550e96f",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -251,17 +274,16 @@
                     "children": []
                   },
                   {
-                    "id": "8d0645e6-f125-4713-a0f2-7e4e5f0013e7",
+                    "id": "e322d416-a3c3-4829-be67-6445860ed612",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "true",
-                      "wordWrap": "true"
+                      "code": "5"
                     },
                     "children": []
                   },
                   {
-                    "id": "edb1740f-4e17-479d-a859-9a2f58caf136",
+                    "id": "d78f016a-4c0c-411b-920e-ad26a02caeb2",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -280,37 +302,25 @@
                     "children": []
                   },
                   {
-                    "id": "86916dbf-be4e-43db-a80d-5020103f511d",
+                    "id": "a3f61ca2-aa86-455c-9b13-46beb3ae1d34",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "The last node points back to the node at index 1.\n\n3 → 2 → 0 → -4\n    ↑         |\n    |_________|",
-                      "wordWrap": "true"
+                      "code": "Buy on day 2 (price = 1)\nSell on day 5 (price = 6)\n\nProfit = 6 - 1 = 5"
                     },
-                    "children": []
-                  },
-                  {
-                    "id": "2d3c8b66-1a48-4dd7-9563-faad0aa4ddd5",
-                    "type": "paragraph",
-                    "props": {
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    },
-                    "content": [],
                     "children": []
                   }
                 ]
               },
               {
-                "id": "24027bed-db66-4a7d-88cc-adcc1514c2dd",
+                "id": "7eb130fc-5e39-4d74-8d64-1659adfbde23",
                 "type": "column",
                 "props": {
                   "width": "1"
                 },
                 "children": [
                   {
-                    "id": "87bea08d-24bb-4fc1-8b60-3eb5636bc01e",
+                    "id": "2bd9169e-10f1-4f94-b4a8-3b71555309e8",
                     "type": "heading",
                     "props": {
                       "backgroundColor": "default",
@@ -329,7 +339,7 @@
                     "children": []
                   },
                   {
-                    "id": "a28b3553-462c-4c68-b135-7d731865bcc5",
+                    "id": "5a92e457-473f-4efe-9002-1b08bf8c4ba1",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -348,17 +358,16 @@
                     "children": []
                   },
                   {
-                    "id": "3c43e7c2-337b-44a4-b2a5-feb4329cfe96",
+                    "id": "0d590233-6a07-4f99-a083-404ddb70bdfd",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "head = [1,2]\npos = 0",
-                      "wordWrap": "true"
+                      "code": "prices = [7,6,4,3,1]"
                     },
                     "children": []
                   },
                   {
-                    "id": "02161bfa-a5a6-4112-b74b-f98854cc23a1",
+                    "id": "b30b9cb8-da3f-4587-aedf-47215747147b",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -377,56 +386,16 @@
                     "children": []
                   },
                   {
-                    "id": "a99078e7-04e7-405f-935f-e712d05c7ea7",
+                    "id": "6f0439ab-2d4e-4e21-99f8-8d9752cd5796",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "true",
-                      "wordWrap": "true"
+                      "code": "0"
                     },
                     "children": []
                   },
                   {
-                    "id": "5ab65c7a-0df1-4bff-bd25-ae7b0f09bd34",
-                    "type": "paragraph",
-                    "props": {
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    },
-                    "content": [],
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "id": "c51ff805-8103-4f85-8be0-495ec288000b",
-                "type": "column",
-                "props": {
-                  "width": "1"
-                },
-                "children": [
-                  {
-                    "id": "482044e5-286e-404c-b56a-f7ac0c207044",
-                    "type": "heading",
-                    "props": {
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left",
-                      "level": 3,
-                      "isToggleable": false
-                    },
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Example 3",
-                        "styles": {}
-                      }
-                    ],
-                    "children": []
-                  },
-                  {
-                    "id": "629b5cea-3b32-4b10-8705-7b19d22b4e03",
+                    "id": "0c104e86-0e2f-4cb7-bca8-2353eed468ee",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -436,7 +405,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Input",
+                        "text": "Explanation",
                         "styles": {
                           "bold": true
                         }
@@ -445,53 +414,12 @@
                     "children": []
                   },
                   {
-                    "id": "e2888470-288c-4ab1-b14d-5c907f45f3f3",
+                    "id": "88a05580-d681-4455-8d06-29d3ac907f0c",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "head = [1]\npos = -1",
-                      "wordWrap": "true"
+                      "code": "The stock price keeps decreasing.\nNo profitable transaction is possible."
                     },
-                    "children": []
-                  },
-                  {
-                    "id": "79caff92-53f7-4547-96d7-690186370fb5",
-                    "type": "paragraph",
-                    "props": {
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    },
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Output",
-                        "styles": {
-                          "bold": true
-                        }
-                      }
-                    ],
-                    "children": []
-                  },
-                  {
-                    "id": "8a2b9859-e205-4465-8f66-ebbc1f1f2586",
-                    "type": "codeBlock",
-                    "props": {
-                      "language": "javascript",
-                      "code": "false",
-                      "wordWrap": "true"
-                    },
-                    "children": []
-                  },
-                  {
-                    "id": "2cfb8862-4b4c-4568-b9f4-73f193a4d5ee",
-                    "type": "paragraph",
-                    "props": {
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    },
-                    "content": [],
                     "children": []
                   }
                 ]
@@ -499,7 +427,13 @@
             ]
           },
           {
-            "id": "e50c4c12-dc8b-4359-94a8-1bd960faeab4",
+            "id": "fe574049-34a1-41d4-a3f8-867ec18ec850",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "f34efdb8-2dd8-44f9-9736-abbd3779eb4f",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -518,7 +452,7 @@
             "children": []
           },
           {
-            "id": "f384e552-d28a-4aac-ade0-17ac77936200",
+            "id": "076b9590-1d26-4499-aa70-a63d2fe33b3b",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -528,152 +462,32 @@
             "content": [
               {
                 "type": "text",
-                "text": "Use Floyd's Cycle Detection Algorithm (also called the Tortoise and Hare Algorithm).",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "98263a23-9e46-4cf7-b8f4-b31ae76e8d0f",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Maintain two pointers:",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "e6789503-7ef1-4922-af29-a2195a7e9718",
-            "type": "bulletListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Slow pointer moves one step at a time.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "13a27311-3238-4422-9ab4-ae48b5d9c4e3",
-            "type": "bulletListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Fast pointer moves two steps at a time.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "64864214-c08c-43f4-8413-8184f23c00c8",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "If a cycle exists, the two pointers will eventually meet.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "e358f53c-8302-49eb-82e3-0a4f8060a8d5",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "If the fast pointer reaches ",
+                "text": "The key idea is to keep track of the ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "null",
+                "text": "lowest price seen so far",
                 "styles": {
-                  "code": true
+                  "bold": true
                 }
               },
               {
                 "type": "text",
-                "text": ", there is no cycle.",
+                "text": " while traversing the array.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "951404b9-8e3e-44ad-aa7d-557e0e73583c",
+            "id": "98de4eb8-23d1-4cf1-adb1-68ebc0a4535b",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "19da6052-f02b-47f9-bd12-d4738a50dbf1",
-            "type": "heading",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left",
-              "level": 2,
-              "isToggleable": false
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Dry Run",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "fa7f2c03-99b5-4e0c-96f9-b3b743a744f6",
-            "type": "codeBlock",
-            "props": {
-              "language": "javascript",
-              "code": "head = [3,2,0,-4]\npos = 1\n\nSlow = 3\nFast = 3\n\nMove\n\nSlow = 2\nFast = 0\n\nMove\n\nSlow = 0\nFast = 2\n\nMove\n\nSlow = -4\nFast = -4\n\nPointers meet\n\nReturn true",
-              "wordWrap": "true"
-            },
-            "children": []
-          },
-          {
-            "id": "7578c6aa-98f0-4b1c-8b47-d06926c3b9ad",
-            "type": "divider",
-            "props": {},
-            "children": []
-          },
-          {
-            "id": "522a1d09-a754-4df0-bca3-4e2c250f7d80",
+            "id": "41e0c79d-c019-4087-9338-ac5a99113843",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -692,24 +506,24 @@
             "children": []
           },
           {
-            "id": "0dc7bbc6-0de5-43f2-b408-7dd836da8072",
+            "id": "788b35b9-752c-4249-aedd-4ec73c034abb",
             "type": "addDoc",
             "props": {
-              "fileId": "ca184c86-cbe1-465d-831c-6b2badab578d",
-              "title": "Linked List Cycle Code",
+              "fileId": "2e36f777-4a25-4fac-9ad5-46f45aac9ccd",
+              "title": "Greedy Stock Code",
               "fileType": "code-editor",
               "embedMode": "embed"
             },
             "children": []
           },
           {
-            "id": "bfd40bb8-a8d8-4683-8423-c496b2fbddf7",
+            "id": "09c44f46-cac2-49c8-8137-7bc15d7bbf07",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "9bd3148a-fac2-467d-b916-421731670d9a",
+            "id": "630a67fe-c6e8-4b92-923e-aedfb73acf15",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -728,7 +542,7 @@
             "children": []
           },
           {
-            "id": "008c6906-76f9-4e75-acd4-8d64670c4d7a",
+            "id": "1a01c298-467e-4fb8-b26a-97f3032d04ea",
             "type": "table",
             "props": {
               "textColor": "default"
@@ -868,13 +682,13 @@
             "children": []
           },
           {
-            "id": "6f1e3841-a619-4609-aa45-28e2a7e2372f",
+            "id": "1abb77b1-2d0f-4380-ab50-f6e212dd7643",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "53e41710-1715-416e-84b0-186bf5a325c4",
+            "id": "4cd8baa0-ac56-46fc-bba9-e5641e67da56",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -893,7 +707,7 @@
             "children": []
           },
           {
-            "id": "cbf0dd0f-b0fd-402e-b91f-58214c48337e",
+            "id": "6a14bc9e-41a0-4973-9964-df64aa75a5a8",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -903,66 +717,85 @@
             "content": [
               {
                 "type": "text",
-                "text": "Do ",
+                "text": "This problem demonstrates how to optimize a brute-force solution.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "cf85a75a-95df-497f-a1b9-0e411be796a0",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Instead of checking every possible buy and sell combination (",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "not",
+                "text": "O(n²)",
                 "styles": {
                   "bold": true
                 }
               },
               {
                 "type": "text",
-                "text": " use a HashSet unless specifically asked.",
+                "text": "), maintain the ",
                 "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "6cb7f812-1da9-4242-8e80-a6aa1513daeb",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
+              },
               {
                 "type": "text",
-                "text": "The optimal solution is Floyd's Cycle Detection Algorithm using two pointers.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "4b1c3ffe-6d80-4181-80fe-4f3d40974377",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
+                "text": "minimum price seen so far",
+                "styles": {
+                  "bold": true
+                }
+              },
               {
                 "type": "text",
-                "text": "If the fast pointer catches the slow pointer, a cycle exists.",
+                "text": " and calculate the profit at each step. This reduces the solution to ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time while using ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "constant extra space",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "35b4975e-86cc-4e85-a053-41c7654f4610",
+            "id": "abbf7adb-17e8-4c9f-b997-68e9d388ab99",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "9903a8d7-7448-419d-b474-c7c9a2ee25c0",
+            "id": "87252ad9-2fff-4736-b785-53b049b908c0",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -981,7 +814,7 @@
             "children": []
           },
           {
-            "id": "865664ef-f5c1-47a4-8fdf-b369dca11b16",
+            "id": "d574dfda-b088-48c7-83a9-71e5be7a36df",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -991,14 +824,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "Use two pointers.",
+                "text": "Buy at the lowest price seen so far.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "624c1c36-d7f5-497a-83dc-6876a09cf4e5",
+            "id": "9dd826d4-cbf1-45d4-91f6-272a0d71e5bd",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1008,14 +841,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "Slow moves one node.",
+                "text": "Calculate the profit for every future selling price.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "75b6b560-2d54-43bc-869a-e1ad9cd07a63",
+            "id": "c4657f7c-a866-4c42-9218-e48bcc7d96c2",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1025,14 +858,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "Fast moves two nodes.",
+                "text": "Update the maximum profit during a single traversal.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "b6b00aa6-79a0-4f5c-8e7d-845bbb0673fa",
+            "id": "2d83a65c-f018-44d4-87bd-e5f03cf8460c",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1042,43 +875,26 @@
             "content": [
               {
                 "type": "text",
-                "text": "If they meet, a cycle exists.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "2e33e920-2f33-4218-bda1-28dd5f99c6d8",
-            "type": "bulletListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "If fast reaches ",
+                "text": "If no profitable transaction exists, return ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "null",
+                "text": "0",
                 "styles": {
                   "code": true
                 }
               },
               {
                 "type": "text",
-                "text": ", there is no cycle.",
+                "text": ".",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "3ca26a7a-9a48-462b-b547-ad7381a58b01",
+            "id": "112951e8-ef5d-456d-9fa1-a16e42618958",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1088,31 +904,19 @@
             "content": [
               {
                 "type": "text",
-                "text": "Runs in ",
+                "text": "This is a classic ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "O(n)",
+                "text": "array optimization",
                 "styles": {
                   "bold": true
                 }
               },
               {
                 "type": "text",
-                "text": " time and ",
-                "styles": {}
-              },
-              {
-                "type": "text",
-                "text": "O(1)",
-                "styles": {
-                  "bold": true
-                }
-              },
-              {
-                "type": "text",
-                "text": " extra space.",
+                "text": " problem frequently asked in coding interviews.",
                 "styles": {}
               }
             ],
@@ -1122,6 +926,6 @@
       }
     }
   ],
-  "createdAt": 1785263355146,
+  "createdAt": 1785210624223,
   "updatedAt": 1785263823286
 }

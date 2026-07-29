@@ -1,7 +1,7 @@
 {
-  "fileId": "150f6714-7a66-49c3-97ef-6ba998e69c6d",
-  "_id": "150f6714-7a66-49c3-97ef-6ba998e69c6d",
-  "title": "Linked List Cycle Doc",
+  "fileId": "2120714e-a546-4723-b3b7-045562006b40",
+  "_id": "2120714e-a546-4723-b3b7-045562006b40",
+  "title": "Valid Parentheses Doc",
   "fileType": "document-editor",
   "version": "1.0.0",
   "blocks": [
@@ -10,7 +10,7 @@
       "data": {
         "blocks": [
           {
-            "id": "f13afed4-f2f4-4fc3-96a7-1aa3e5ad03c1",
+            "id": "61a8b428-a0e2-492c-bfe5-432ece79865b",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -22,14 +22,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "15. Linked List Cycle",
+                "text": "16. Valid Parentheses",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "f59ae55f-8149-40e9-bdce-a186e003b2ae",
+            "id": "7e58c468-bfee-427c-9b12-06e68f29199b",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -48,7 +48,7 @@
             "children": []
           },
           {
-            "id": "e1b5882d-57d0-4bc9-b033-0dbb2c313dc7",
+            "id": "3cd53925-3582-49b6-935b-a997691cb5f4",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -58,26 +58,36 @@
             "content": [
               {
                 "type": "text",
-                "text": "Given the ",
+                "text": "Given a string ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "head",
+                "text": "s",
                 "styles": {
                   "code": true
                 }
               },
               {
                 "type": "text",
-                "text": " of a linked list, determine if the linked list has a cycle.",
+                "text": " containing just the characters:",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "f34adbea-636b-4cee-8b6f-40673de429a3",
+            "id": "ef2ae067-12f7-4a53-b00a-7341cd1739a1",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "'(', ')', '{', '}', '[' and ']'",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "12bd9ce8-e33b-4e77-b811-3b1ce08def26",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -87,26 +97,82 @@
             "content": [
               {
                 "type": "text",
-                "text": "A cycle exists if some node in the list can be reached again by continuously following the ",
-                "styles": {}
-              },
-              {
-                "type": "text",
-                "text": "next",
-                "styles": {
-                  "code": true
-                }
-              },
-              {
-                "type": "text",
-                "text": " pointer.",
+                "text": "determine if the input string is valid.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "85e9c681-e744-425f-85e9-36a65ffde32c",
+            "id": "31b26e03-0fb3-4cf3-a281-162e85ca6701",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A string is valid if:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2ce8bc88-7aa2-42fc-aee3-23b3c110aec7",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Every opening bracket has a corresponding closing bracket of the same type.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e0a6a74b-77d4-4dcb-aa42-e1499e63fd43",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Opening brackets are closed in the correct order.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "00982e86-cd42-412d-9dfe-9066b3b8392e",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Every closing bracket has a matching opening bracket.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "86dc7440-b841-4989-a42c-e7885a663f9a",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -128,7 +194,7 @@
               },
               {
                 "type": "text",
-                "text": " if there is a cycle; otherwise, return ",
+                "text": " if the string is valid; otherwise, return ",
                 "styles": {}
               },
               {
@@ -147,13 +213,13 @@
             "children": []
           },
           {
-            "id": "84f330f3-c674-4ec6-bae6-ada25ad16a87",
+            "id": "e81db8d8-e3e2-4eca-8dc5-c5c9de446b0f",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "1cc93180-72cd-4ad5-9a31-88e0dca5daac",
+            "id": "3cf81201-ceb5-471f-b0ff-c3e1d8e552e7",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -172,19 +238,19 @@
             "children": []
           },
           {
-            "id": "74f72a2c-981b-49b7-9d24-a6dff6e63aa5",
+            "id": "a8ede9a1-c8be-4860-8a99-b9a58fc87af6",
             "type": "column_list",
             "props": {},
             "children": [
               {
-                "id": "9f9dec00-f015-488c-a054-f77ac49015ed",
+                "id": "576b0ac2-2a5e-4e7c-b9c3-a04b147736ef",
                 "type": "column",
                 "props": {
                   "width": "1"
                 },
                 "children": [
                   {
-                    "id": "97389b55-450a-4eb4-8ed0-f1b0ff6ab1d8",
+                    "id": "93adb80d-2a7f-4684-9fd0-3f4dab1c281d",
                     "type": "heading",
                     "props": {
                       "backgroundColor": "default",
@@ -203,7 +269,7 @@
                     "children": []
                   },
                   {
-                    "id": "b0d5e4f9-37c4-4e30-8afd-8114eba26028",
+                    "id": "9ad8cb55-7561-47d4-b644-d58c20cac773",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -222,17 +288,17 @@
                     "children": []
                   },
                   {
-                    "id": "3f29a725-0c64-4c79-ae9a-7042cf1e4be7",
+                    "id": "ca38e61b-0347-4326-999a-ffd44eab53cc",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "head = [3,2,0,-4]\npos = 1",
+                      "code": "s = \"()\"",
                       "wordWrap": "true"
                     },
                     "children": []
                   },
                   {
-                    "id": "b002edeb-38bd-46e2-a89d-33031ae48944",
+                    "id": "8c393c47-58f2-49f8-80ac-f53bb330147b",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -251,7 +317,7 @@
                     "children": []
                   },
                   {
-                    "id": "8d0645e6-f125-4713-a0f2-7e4e5f0013e7",
+                    "id": "48f03431-5a4c-48f8-83c4-6b86778e8381",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
@@ -261,36 +327,7 @@
                     "children": []
                   },
                   {
-                    "id": "edb1740f-4e17-479d-a859-9a2f58caf136",
-                    "type": "paragraph",
-                    "props": {
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    },
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Explanation",
-                        "styles": {
-                          "bold": true
-                        }
-                      }
-                    ],
-                    "children": []
-                  },
-                  {
-                    "id": "86916dbf-be4e-43db-a80d-5020103f511d",
-                    "type": "codeBlock",
-                    "props": {
-                      "language": "javascript",
-                      "code": "The last node points back to the node at index 1.\n\n3 → 2 → 0 → -4\n    ↑         |\n    |_________|",
-                      "wordWrap": "true"
-                    },
-                    "children": []
-                  },
-                  {
-                    "id": "2d3c8b66-1a48-4dd7-9563-faad0aa4ddd5",
+                    "id": "1ae5e743-dea3-4ed5-90ee-b5ba121a135e",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -303,14 +340,14 @@
                 ]
               },
               {
-                "id": "24027bed-db66-4a7d-88cc-adcc1514c2dd",
+                "id": "f2461a3e-9725-42a5-aeed-915b22493adf",
                 "type": "column",
                 "props": {
                   "width": "1"
                 },
                 "children": [
                   {
-                    "id": "87bea08d-24bb-4fc1-8b60-3eb5636bc01e",
+                    "id": "fa65b4e5-03c3-4630-9e00-d14837dc977c",
                     "type": "heading",
                     "props": {
                       "backgroundColor": "default",
@@ -329,7 +366,7 @@
                     "children": []
                   },
                   {
-                    "id": "a28b3553-462c-4c68-b135-7d731865bcc5",
+                    "id": "e43eef11-f507-49f3-86d3-a70c0376ba87",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -348,17 +385,17 @@
                     "children": []
                   },
                   {
-                    "id": "3c43e7c2-337b-44a4-b2a5-feb4329cfe96",
+                    "id": "8fcdd596-6abf-4417-b444-48e997f1ee75",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "head = [1,2]\npos = 0",
+                      "code": "s = \"()[]{}\"",
                       "wordWrap": "true"
                     },
                     "children": []
                   },
                   {
-                    "id": "02161bfa-a5a6-4112-b74b-f98854cc23a1",
+                    "id": "17746453-4b2b-4b83-a0b9-4f584959f7b5",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -377,7 +414,7 @@
                     "children": []
                   },
                   {
-                    "id": "a99078e7-04e7-405f-935f-e712d05c7ea7",
+                    "id": "11d7ae86-9f8b-44c8-9c04-0a5dfc94ee08",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
@@ -387,7 +424,7 @@
                     "children": []
                   },
                   {
-                    "id": "5ab65c7a-0df1-4bff-bd25-ae7b0f09bd34",
+                    "id": "16bb51bb-15b6-464f-b449-e00f6edbbbc0",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -400,14 +437,14 @@
                 ]
               },
               {
-                "id": "c51ff805-8103-4f85-8be0-495ec288000b",
+                "id": "b0f428de-4866-44d9-8222-dc96944fcc23",
                 "type": "column",
                 "props": {
                   "width": "1"
                 },
                 "children": [
                   {
-                    "id": "482044e5-286e-404c-b56a-f7ac0c207044",
+                    "id": "c091686e-c09c-4ced-86dd-e802f9eb66ca",
                     "type": "heading",
                     "props": {
                       "backgroundColor": "default",
@@ -426,7 +463,7 @@
                     "children": []
                   },
                   {
-                    "id": "629b5cea-3b32-4b10-8705-7b19d22b4e03",
+                    "id": "025bcf15-913a-485c-858a-4eed10b31181",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -445,17 +482,17 @@
                     "children": []
                   },
                   {
-                    "id": "e2888470-288c-4ab1-b14d-5c907f45f3f3",
+                    "id": "250e93ff-685f-4dab-9dbd-bdbd03d287cc",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
-                      "code": "head = [1]\npos = -1",
+                      "code": "s = \"(]\"",
                       "wordWrap": "true"
                     },
                     "children": []
                   },
                   {
-                    "id": "79caff92-53f7-4547-96d7-690186370fb5",
+                    "id": "1e963e7c-a528-4a30-b5a5-3f95340d36fc",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -474,7 +511,7 @@
                     "children": []
                   },
                   {
-                    "id": "8a2b9859-e205-4465-8f66-ebbc1f1f2586",
+                    "id": "eb61aabc-c859-4a48-85ec-aff600da40f2",
                     "type": "codeBlock",
                     "props": {
                       "language": "javascript",
@@ -484,7 +521,7 @@
                     "children": []
                   },
                   {
-                    "id": "2cfb8862-4b4c-4568-b9f4-73f193a4d5ee",
+                    "id": "0d767aea-3f0e-473b-8b56-b00269033015",
                     "type": "paragraph",
                     "props": {
                       "backgroundColor": "default",
@@ -499,7 +536,7 @@
             ]
           },
           {
-            "id": "e50c4c12-dc8b-4359-94a8-1bd960faeab4",
+            "id": "e9ddc215-8407-4add-90e2-0dbb84be77a7",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -518,7 +555,7 @@
             "children": []
           },
           {
-            "id": "f384e552-d28a-4aac-ade0-17ac77936200",
+            "id": "fd5d3ebb-8e9d-4336-81cb-833dbffaa1d8",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -528,117 +565,224 @@
             "content": [
               {
                 "type": "text",
-                "text": "Use Floyd's Cycle Detection Algorithm (also called the Tortoise and Hare Algorithm).",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "98263a23-9e46-4cf7-b8f4-b31ae76e8d0f",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Maintain two pointers:",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "e6789503-7ef1-4922-af29-a2195a7e9718",
-            "type": "bulletListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Slow pointer moves one step at a time.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "13a27311-3238-4422-9ab4-ae48b5d9c4e3",
-            "type": "bulletListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Fast pointer moves two steps at a time.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "64864214-c08c-43f4-8413-8184f23c00c8",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "If a cycle exists, the two pointers will eventually meet.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "e358f53c-8302-49eb-82e3-0a4f8060a8d5",
-            "type": "paragraph",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "If the fast pointer reaches ",
+                "text": "Use a ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "null",
+                "text": "Stack",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " to keep track of opening brackets.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b79bf7c9-1ddf-4e41-8d76-75ee4a645070",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d0825279-bc3f-4ca1-a046-08b00c3f49fe",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Traverse the string character by character.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b55009a1-9a59-4d64-81de-347e3ec79704",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the character is an opening bracket, push it onto the stack.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "88c013a4-67d7-4761-9c2d-3cb4b3c6cf65",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If it is a closing bracket:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "9b25f490-00fc-4638-97e9-3366986f1a6b",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "If the stack is empty, return ",
+                    "styles": {}
+                  },
+                  {
+                    "type": "text",
+                    "text": "false",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ".",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "d9cc4bfe-daa9-4746-a7bc-3af603cefe23",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Pop the top element.",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "32984b82-12e2-4227-916f-fd779b6c3152",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Check whether it matches the current closing bracket.",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "1a1e8ba1-9bfe-47d2-8a33-af038022c95a",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "After processing all characters, the stack should be empty.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e569ed8e-7adc-4182-8960-47ab38208b27",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the stack is empty, return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "true",
                 "styles": {
                   "code": true
                 }
               },
               {
                 "type": "text",
-                "text": ", there is no cycle.",
+                "text": "; otherwise, return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "false",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "951404b9-8e3e-44ad-aa7d-557e0e73583c",
+            "id": "19936cc6-8e95-437e-8512-6fa014c07e47",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "19da6052-f02b-47f9-bd12-d4738a50dbf1",
+            "id": "9da7b173-b371-4bbd-8e64-aca4ebbe3f85",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -657,23 +801,23 @@
             "children": []
           },
           {
-            "id": "fa7f2c03-99b5-4e0c-96f9-b3b743a744f6",
+            "id": "319436ca-8697-4fb3-b5d3-5639b1d534b4",
             "type": "codeBlock",
             "props": {
               "language": "javascript",
-              "code": "head = [3,2,0,-4]\npos = 1\n\nSlow = 3\nFast = 3\n\nMove\n\nSlow = 2\nFast = 0\n\nMove\n\nSlow = 0\nFast = 2\n\nMove\n\nSlow = -4\nFast = -4\n\nPointers meet\n\nReturn true",
+              "code": "s = \"({[]})\"\n\nRead '('\n\nStack\n\n(\n\n-------------------\n\nRead '{'\n\nStack\n\n(\n{\n\n-------------------\n\nRead '['\n\nStack\n\n(\n{\n[\n\n-------------------\n\nRead ']'\n\nPop '['\n\nStack\n\n(\n{\n\n-------------------\n\nRead '}'\n\nPop '{'\n\nStack\n\n(\n\n-------------------\n\nRead ')'\n\nPop '('\n\nStack Empty\n\nReturn true",
               "wordWrap": "true"
             },
             "children": []
           },
           {
-            "id": "7578c6aa-98f0-4b1c-8b47-d06926c3b9ad",
+            "id": "8bf7f337-befc-4e32-bc3c-efa1057850ac",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "522a1d09-a754-4df0-bca3-4e2c250f7d80",
+            "id": "b24345a7-430d-465b-bb52-c51b589b9486",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -692,24 +836,24 @@
             "children": []
           },
           {
-            "id": "0dc7bbc6-0de5-43f2-b408-7dd836da8072",
+            "id": "353de496-3e16-4d65-a298-f5e7d48cb6ca",
             "type": "addDoc",
             "props": {
-              "fileId": "ca184c86-cbe1-465d-831c-6b2badab578d",
-              "title": "Linked List Cycle Code",
+              "fileId": "be81ad11-47e7-4820-ac74-72a078633af4",
+              "title": "Valid Parentheses Code",
               "fileType": "code-editor",
               "embedMode": "embed"
             },
             "children": []
           },
           {
-            "id": "bfd40bb8-a8d8-4683-8423-c496b2fbddf7",
+            "id": "3a20fbff-43ee-4d25-b904-1f06ad76a030",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "9bd3148a-fac2-467d-b916-421731670d9a",
+            "id": "11ca23c7-c7dc-43a2-860f-ca42b0b6c45b",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -728,7 +872,7 @@
             "children": []
           },
           {
-            "id": "008c6906-76f9-4e75-acd4-8d64670c4d7a",
+            "id": "5f6d13ba-b0c7-4ebd-b4d4-df1f163300f7",
             "type": "table",
             "props": {
               "textColor": "default"
@@ -847,7 +991,7 @@
                       "content": [
                         {
                           "type": "text",
-                          "text": "O(1)",
+                          "text": "O(n)",
                           "styles": {
                             "bold": true
                           }
@@ -868,13 +1012,13 @@
             "children": []
           },
           {
-            "id": "6f1e3841-a619-4609-aa45-28e2a7e2372f",
+            "id": "603e1f72-a35a-4257-95dc-cb9d582c57c2",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "53e41710-1715-416e-84b0-186bf5a325c4",
+            "id": "422dd90a-b7ce-4f75-8fd4-5a6746927a83",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -893,7 +1037,7 @@
             "children": []
           },
           {
-            "id": "cbf0dd0f-b0fd-402e-b91f-58214c48337e",
+            "id": "95415085-88d4-4b3c-a79e-0cc6f34ccf88",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -903,26 +1047,26 @@
             "content": [
               {
                 "type": "text",
-                "text": "Do ",
+                "text": "A stack follows the ",
                 "styles": {}
               },
               {
                 "type": "text",
-                "text": "not",
+                "text": "Last In, First Out (LIFO)",
                 "styles": {
                   "bold": true
                 }
               },
               {
                 "type": "text",
-                "text": " use a HashSet unless specifically asked.",
+                "text": " principle.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "6cb7f812-1da9-4242-8e80-a6aa1513daeb",
+            "id": "8e442673-0613-493e-a6f0-35ae3983fa8a",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -932,14 +1076,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "The optimal solution is Floyd's Cycle Detection Algorithm using two pointers.",
+                "text": "The most recently opened bracket must be closed first.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "4b1c3ffe-6d80-4181-80fe-4f3d40974377",
+            "id": "6222bc96-45f6-4123-8c5f-f3eb0144b877",
             "type": "paragraph",
             "props": {
               "backgroundColor": "default",
@@ -949,20 +1093,20 @@
             "content": [
               {
                 "type": "text",
-                "text": "If the fast pointer catches the slow pointer, a cycle exists.",
+                "text": "If at any point a closing bracket doesn't match the top of the stack, the string is invalid.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "35b4975e-86cc-4e85-a053-41c7654f4610",
+            "id": "871c48c7-5c34-495d-bb4c-9983338ad052",
             "type": "divider",
             "props": {},
             "children": []
           },
           {
-            "id": "9903a8d7-7448-419d-b474-c7c9a2ee25c0",
+            "id": "227a2dc5-254b-45a2-9f9d-2b39ca12dc09",
             "type": "heading",
             "props": {
               "backgroundColor": "default",
@@ -981,7 +1125,7 @@
             "children": []
           },
           {
-            "id": "865664ef-f5c1-47a4-8fdf-b369dca11b16",
+            "id": "ff997066-23b2-4e9c-9b26-37cc818b64bb",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -991,14 +1135,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "Use two pointers.",
+                "text": "Use a stack to store opening brackets.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "624c1c36-d7f5-497a-83dc-6876a09cf4e5",
+            "id": "d8a4c54a-5965-4e38-b188-8121c2ab9bee",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1008,14 +1152,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "Slow moves one node.",
+                "text": "Push opening brackets onto the stack.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "75b6b560-2d54-43bc-869a-e1ad9cd07a63",
+            "id": "cd73b80a-1e93-45d0-bb7d-7244fa659b6f",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1025,14 +1169,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "Fast moves two nodes.",
+                "text": "Pop and compare when encountering closing brackets.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "b6b00aa6-79a0-4f5c-8e7d-845bbb0673fa",
+            "id": "aadc97c1-05fb-4c5d-8147-fa53f8bd7e42",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1042,43 +1186,14 @@
             "content": [
               {
                 "type": "text",
-                "text": "If they meet, a cycle exists.",
+                "text": "The stack should be empty after processing the string.",
                 "styles": {}
               }
             ],
             "children": []
           },
           {
-            "id": "2e33e920-2f33-4218-bda1-28dd5f99c6d8",
-            "type": "bulletListItem",
-            "props": {
-              "backgroundColor": "default",
-              "textColor": "default",
-              "textAlignment": "left"
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "If fast reaches ",
-                "styles": {}
-              },
-              {
-                "type": "text",
-                "text": "null",
-                "styles": {
-                  "code": true
-                }
-              },
-              {
-                "type": "text",
-                "text": ", there is no cycle.",
-                "styles": {}
-              }
-            ],
-            "children": []
-          },
-          {
-            "id": "3ca26a7a-9a48-462b-b547-ad7381a58b01",
+            "id": "10baa785-18b2-46ad-863b-6133a92a13e6",
             "type": "bulletListItem",
             "props": {
               "backgroundColor": "default",
@@ -1105,14 +1220,14 @@
               },
               {
                 "type": "text",
-                "text": "O(1)",
+                "text": "O(n)",
                 "styles": {
                   "bold": true
                 }
               },
               {
                 "type": "text",
-                "text": " extra space.",
+                "text": " space.",
                 "styles": {}
               }
             ],
@@ -1122,6 +1237,6 @@
       }
     }
   ],
-  "createdAt": 1785263355146,
-  "updatedAt": 1785263823286
+  "createdAt": 1785296802891,
+  "updatedAt": 1785297301762
 }
