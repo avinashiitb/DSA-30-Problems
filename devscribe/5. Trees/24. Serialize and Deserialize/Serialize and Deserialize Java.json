@@ -1,0 +1,145 @@
+{
+  "fileId": "03e8bf46-98de-4586-91ea-391f30daa3ef",
+  "_id": "03e8bf46-98de-4586-91ea-391f30daa3ef",
+  "title": "Serialize and Deserialize Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "import java.util.*;\n\nclass TreeNode {\n\n    int val;\n    TreeNode left;\n    TreeNode right;\n\n    TreeNode(int val) {\n        this.val = val;\n    }\n}\n\nclass Codec {\n\n    // Serialize Tree\n    public String serialize(TreeNode root) {\n\n        if (root == null) {\n            return \"\";\n        }\n\n        StringBuilder sb = new StringBuilder();\n\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n\n        while (!queue.isEmpty()) {\n\n            TreeNode node = queue.poll();\n\n            if (node == null) {\n                sb.append(\"null,\");\n                continue;\n            }\n\n            sb.append(node.val).append(\",\");\n\n            queue.offer(node.left);\n            queue.offer(node.right);\n        }\n\n        sb.setLength(sb.length() - 1);\n\n        return sb.toString();\n    }\n\n    // Deserialize Tree\n    public TreeNode deserialize(String data) {\n\n        if (data == null || data.isEmpty()) {\n            return null;\n        }\n\n        String[] values = data.split(\",\");\n\n        TreeNode root = new TreeNode(Integer.parseInt(values[0]));\n\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n\n        int index = 1;\n\n        while (!queue.isEmpty() && index < values.length) {\n\n            TreeNode current = queue.poll();\n\n            if (!values[index].equals(\"null\")) {\n                current.left = new TreeNode(Integer.parseInt(values[index]));\n                queue.offer(current.left);\n            }\n            index++;\n\n            if (index < values.length && !values[index].equals(\"null\")) {\n                current.right = new TreeNode(Integer.parseInt(values[index]));\n                queue.offer(current.right);\n            }\n            index++;\n        }\n\n        return root;\n    }\n\n    // Convert tree to level-order string\n    private static List<String> levelOrder(TreeNode root) {\n\n        List<String> result = new ArrayList<>();\n\n        if (root == null) {\n            return result;\n        }\n\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n\n        while (!queue.isEmpty()) {\n\n            TreeNode node = queue.poll();\n\n            if (node == null) {\n                result.add(\"null\");\n            } else {\n\n                result.add(String.valueOf(node.val));\n\n                queue.offer(node.left);\n                queue.offer(node.right);\n            }\n        }\n\n        while (!result.isEmpty() &&\n                result.get(result.size() - 1).equals(\"null\")) {\n            result.remove(result.size() - 1);\n        }\n\n        return result;\n    }\n\n    public static void main(String[] args) {\n\n        // Custom DevScribe input\n        Integer[] root = Input.getIntegerArray(\"root\");\n\n        TreeNode tree = buildTree(root);\n\n        Codec codec = new Codec();\n\n        String serialized = codec.serialize(tree);\n\n        TreeNode deserialized = codec.deserialize(serialized);\n\n        System.out.println(\"Serialized:\");\n        System.out.println(serialized);\n\n        System.out.println();\n\n        System.out.println(\"Deserialized:\");\n        System.out.println(levelOrder(deserialized));\n    }\n\n    // Build tree from level-order array\n    private static TreeNode buildTree(Integer[] values) {\n\n        if (values.length == 0 || values[0] == null) {\n            return null;\n        }\n\n        TreeNode root = new TreeNode(values[0]);\n\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n\n        int index = 1;\n\n        while (!queue.isEmpty() && index < values.length) {\n\n            TreeNode current = queue.poll();\n\n            if (index < values.length && values[index] != null) {\n                current.left = new TreeNode(values[index]);\n                queue.offer(current.left);\n            }\n            index++;\n\n            if (index < values.length && values[index] != null) {\n                current.right = new TreeNode(values[index]);\n                queue.offer(current.right);\n            }\n            index++;\n        }\n\n        return root;\n    }\n}",
+        "language": "java",
+        "output": "Serialized:\n1,2,3,null,null,4,5,null,null,null,null\n\nDeserialized:\n[1, 2, 3, null, null, 4, 5]\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785381235959_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785381235959_0_0",
+                "key": "root",
+                "value": "[1,2,3,null,null,4,5]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785381235959_1_0",
+                "key": "root",
+                "value": "[1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785381235959_2_0",
+                "key": "root",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785381235959_3_0",
+                "key": "root",
+                "value": "[4,2,7,1,3,6,9]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785381235959_4_0",
+                "key": "root",
+                "value": "[1,2,null,3]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785381235959_5_0",
+                "key": "root",
+                "value": "[5,3,8,1,4,7,9]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785381235959_6_0",
+                "key": "root",
+                "value": "[10,20,30,40,null,null,50]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785381235959_7_0",
+                "key": "root",
+                "value": "[8]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785381235959_8_0",
+                "key": "root",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785381235959_9_0",
+                "key": "root",
+                "value": "[1]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381235959_10",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785381235959_10_0",
+                "key": "root",
+                "value": "[1,null,2,null,3,null,4]"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785381235959_0"
+      }
+    }
+  ],
+  "createdAt": 1785381168875,
+  "updatedAt": 1785381240163
+}

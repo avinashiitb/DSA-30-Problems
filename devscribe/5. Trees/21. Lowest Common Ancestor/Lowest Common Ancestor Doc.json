@@ -1,0 +1,1035 @@
+{
+  "fileId": "1e20c2bd-6631-471d-bd91-bd076fd73609",
+  "_id": "1e20c2bd-6631-471d-bd91-bd076fd73609",
+  "title": "Lowest Common Ancestor Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "88d77faa-fec9-4386-b331-10b95c8e9965",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "21. Lowest Common Ancestor of a Binary Search Tree",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "08bfbc27-24b6-42bc-8ae5-4affc23957f8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1abf7de2-fcaf-41bf-8597-e49d3b5c32e5",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given the root of a ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Binary Search Tree (BST)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and two nodes ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "p",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "q",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", return their ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Lowest Common Ancestor (LCA)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c933097f-a956-4ea5-9f1b-ef56141ed601",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The Lowest Common Ancestor is the lowest node in the tree that has both ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "p",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "q",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " as descendants (where a node can be a descendant of itself).",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "80a3da18-86c9-4c24-ba5f-bd670789659f",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "5e0377ec-8735-413b-8e74-57bf687ea172",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b5c216d3-b71b-4b41-a965-ce88aa5a5ec4",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "706401eb-8fac-4954-bbd1-15bd20985d21",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "f8699c18-1151-44bc-af19-a4089c596e1d",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "89903603-8d02-4782-a41c-aed1196fb4b0",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "5efde07a-b8c0-494e-9594-19754ec790c0",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "root = [6,2,8,0,4,7,9,null,null,3,5]\np = 2\nq = 8",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "6f867b3e-9b93-44d6-8f23-6d978d85ed4a",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "7689bb1c-f8d4-460a-9b45-6be3b664216e",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "6",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "128c564a-4a44-44ef-a378-ce515a288967",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "c5dc4b8c-ae24-409b-b8f9-1ae907af4ed8",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "5a416a03-9b7b-4fe6-bd3e-cec61c1d68f8",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "f8867912-53d7-440c-aa98-df8e89864dc9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "54a053d1-52df-48ec-85bf-8802febd4799",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "root = [6,2,8,0,4,7,9,null,null,3,5]\np = 2\nq = 4",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "8b2d3df0-598a-45a6-bef1-e6a4a9287232",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "0e1c0c71-3297-42f5-a193-d61c9b0e7be7",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "2",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "ffdda4f3-cb38-43cc-a115-0201fb11ecc9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "44b2042c-16b2-406c-9f88-ee76541621f5",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9165b6dd-9056-4692-8b7a-901a943ea5a7",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Since this is a ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Binary Search Tree",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", we can use its properties.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "cf468431-8cd2-4dd1-9136-4193eb2f4386",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "BST Property",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b91c402b-bc77-4d28-96f9-3d2492fdf6eb",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Left subtree values are smaller.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1d096573-daad-4249-9ac7-79bd1e9c1d1b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Right subtree values are larger.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0775ea30-3974-422a-a834-904453f169fd",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "bb000875-a955-46a9-84ec-5befe8707705",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If both ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "p",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "q",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " are smaller than the current node, move left.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1feda62f-553d-45bc-b277-b5356a8f87ed",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If both are larger than the current node, move right.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "88d8ea83-cf33-4d97-b6a9-6386137efcfa",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Otherwise, the current node is the Lowest Common Ancestor.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "68b53fb0-3a2a-42ea-8644-ee37ecfb1b26",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "e899cd18-f321-4bb2-8b2e-e1316b4f4e01",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "beba4a6f-8179-470b-893f-83c0c136810f",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "               6\n             /   \\\n            2     8\n           / \\   / \\\n          0   4 7   9\n             / \\\n            3   5\n\np = 2\nq = 8\n\n2 < 6\n8 > 6\n\nNodes split here.\n\nAnswer = 6",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "97b19dd4-27b7-4b6f-91da-ec738b971ffa",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "bd0440d3-b3ca-4509-8f9b-6056f5d625f0",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5993f978-d02e-475b-ba8a-bdb7213838b4",
+            "type": "addDoc",
+            "props": {
+              "fileId": "773e53bf-41d3-40c8-9065-ef1b60f9b70b",
+              "title": "Lowest Common Ancestor Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "c9d41468-601b-47b2-8e47-4492d5e5ecc3",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e0b48f5b-0661-462e-b1ed-761e1c7712b8",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(h)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(1)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "b3068480-99d1-4eed-93f3-099edacbcbbc",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "01c4794f-5f56-42d6-ba82-bba5e0bd3bdd",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "h",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Height of the BST.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5b6e287b-486d-441c-b6db-f42af296a22c",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "d8d83c63-e7a6-4462-8272-db541113f8c4",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d44854e7-9519-40f8-9e2a-a4aad9fd8b83",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Unlike a normal Binary Tree, you don't need to search both subtrees.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b30476bb-812b-4b75-b2fc-36d2cc723a1e",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use the BST property to move only in one direction until the split point is found.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "963b6e35-e577-4a91-8569-806e614c6fc0",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "b1cacff0-0613-470a-aa25-e0757a805276",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "178f0180-f00a-460c-97c9-fcd851d20bf6",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Uses BST property.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fff99f32-a4d8-4c34-84e8-a13a0aa49481",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Traverse only one path.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f7d2f661-984c-4708-bc10-0dc2b14927f5",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Split point is the LCA.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "00bc972a-fa23-43ec-9e6b-023a1ad200a4",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Better than Binary Tree LCA.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c83c2a4f-95d2-4c56-904c-525d0ce43840",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(h)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785347455646,
+  "updatedAt": 1785380506720
+}

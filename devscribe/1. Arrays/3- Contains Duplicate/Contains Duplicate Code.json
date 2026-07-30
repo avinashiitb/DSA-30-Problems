@@ -10,7 +10,7 @@
       "data": {
         "code": "import java.util.*;\n\nclass Solution {\n    public boolean solve(int[] A) {\n        HashSet<Integer> Set = new HashSet<>();\n\n        for(int i = 0; i< A.length; i++) {\n          if(Set.contains(A[i])) {\n            return true;\n          }\n          Set.add(A[i]);\n        }\n        return false;\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"prices\"); \n        boolean output = Input.getBool(\"output\");\n        System.out.println(\"Expected: \"+ output);\n\n      \n        Solution sol = new Solution();\n\n\n        boolean isDuplicate = sol.solve(nums);\n\n        System.out.println(\"isDuplicate: \" + isDuplicate);\n    }\n}",
         "language": "java",
-        "output": "Expected: false\nisDuplicate: false\n",
+        "output": "Expected: true\nisDuplicate: false\n",
         "panelOpen": true,
         "wordWrap": false,
         "testCases": [
@@ -191,10 +191,10 @@
             ]
           }
         ],
-        "selectedTestCaseId": "tc_1785045229183_1"
+        "selectedTestCaseId": "tc_1785045229183_0"
       }
     }
   ],
   "createdAt": 1785210624223,
-  "updatedAt": 1785263823286
+  "updatedAt": 1785346424873
 }

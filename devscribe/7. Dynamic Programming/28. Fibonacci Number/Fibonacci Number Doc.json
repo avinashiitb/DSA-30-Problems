@@ -1,0 +1,1128 @@
+{
+  "fileId": "307365fc-d51a-4636-95be-54d6190ec761",
+  "_id": "307365fc-d51a-4636-95be-54d6190ec761",
+  "title": "Fibonacci Number Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "e8ea744c-73a0-47ed-8c1f-3d01138482e8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "28. Fibonacci Number",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "aeebf742-3a7a-4933-b66e-508346f89170",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "67f7c8ca-5eac-4280-87ab-7979b6bea289",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The Fibonacci numbers are defined as:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "333c74ef-0f17-4468-bace-c07e658bcdb6",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "F(0) = 0\nF(1) = 1\nF(n) = F(n - 1) + F(n - 2), for n > 1",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "718724b4-9efe-45c9-b1a7-4b6636c2901f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given an integer ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", return the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "nᵗʰ",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " Fibonacci number.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "141067a4-7d1a-4112-8eab-ba555e482942",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "3a9f8a62-5439-429c-b80d-7c6b6b628973",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "de9befe7-8f7b-4700-8c9b-f3fe087bde47",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "1de4a4e2-a5d1-4c61-b839-7470c799cc58",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "a7f8100b-abac-453f-a2f7-e33e7528334d",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "18ced8b7-61b2-499e-9635-3deb72ac16b6",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ec0b9f43-4b7c-4de9-8829-decb40126406",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "n = 2",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "220c2060-2d64-424a-8131-4892b0e9f430",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "b66ca0c2-79fe-4195-812c-affdae575e3b",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "1",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "221b8651-3ddf-49e5-a488-ca2563aa3f48",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "3573e42d-c572-449d-ae70-f41f67866c58",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "F(2) = F(1) + F(0)\n     = 1 + 0\n     = 1",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "db36ceec-8320-42c4-8be4-fa2bc3642c18",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "4143cecb-f9fb-45e1-8fcb-9fda9f0678f9",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "8b571c84-33e3-4f80-a7cd-698b0e79665b",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "d33a4a32-28bc-4509-9de6-f78ed777d9a4",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "145c4dd8-656d-406d-bc41-61cc25a887c4",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "n = 4",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "d0f17bfd-8e46-49b6-b042-144a288bda08",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "1f66c741-3355-420e-9206-0c75d79ed809",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "47feecae-a276-4f9f-93e3-274897484a80",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "919ca6e7-210a-49b3-8adf-c6bacb3def70",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "F(4) = F(3) + F(2)\n     = 2 + 1\n     = 3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "97ad2c81-8d4a-4d67-bb34-6991c163ceef",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "b75e8d4b-d2fd-41a4-a4e8-19aa00c83aa3",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a24935f5-6dd9-4185-940b-d951f886f58c",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Dynamic Programming (Iterative)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "be93e162-e218-4e37-93a8-af4a61fd0f0e",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "cccf134c-928c-4371-9d30-fc83d36c100c",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Handle the base cases:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "31ac63a0-0873-4c33-a87d-1903df6bce32",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "If ",
+                    "styles": {}
+                  },
+                  {
+                    "type": "text",
+                    "text": "n = 0",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", return ",
+                    "styles": {}
+                  },
+                  {
+                    "type": "text",
+                    "text": "0",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ".",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "8a2bc46a-2e98-4ec1-918b-0ea6ae35bf60",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "If ",
+                    "styles": {}
+                  },
+                  {
+                    "type": "text",
+                    "text": "n = 1",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", return ",
+                    "styles": {}
+                  },
+                  {
+                    "type": "text",
+                    "text": "1",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ".",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "c65835bb-c22d-4906-8dd0-5935592c7b12",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Maintain two variables:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "1ae9f337-56c5-4b19-8bd7-ea6ae9001502",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "prev2",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " → Fibonacci(n-2)",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "32f542ca-7dd7-46ff-bdab-7e310bbe574b",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "prev1",
+                    "styles": {
+                      "code": true
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " → Fibonacci(n-1)",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "e7e069d2-5d89-40f2-ad26-8115e1111f7e",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Iterate from ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "2",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " to ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "10554cf4-b8f6-48bd-b44b-c81bf650b663",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Compute the current Fibonacci number.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7b8d82f0-bf87-4494-9cd7-c77707031cbc",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Update the previous values.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "88005012-b704-425f-813d-b4e0462ea3fa",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return the final result.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1de1ab9b-4cdd-41dc-b4fe-fc41a837c1d5",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "0661e2e6-8a64-42e0-88b7-b43879dd10b2",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5b1e6f79-b904-4cce-a242-0bed97fbf181",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "n = 5\n\nprev2 = 0\nprev1 = 1\n\ni = 2\n\ncurrent = 1\n\nprev2 = 1\nprev1 = 1\n\ni = 3\n\ncurrent = 2\n\nprev2 = 1\nprev1 = 2\n\ni = 4\n\ncurrent = 3\n\nprev2 = 2\nprev1 = 3\n\ni = 5\n\ncurrent = 5\n\nAnswer = 5",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "cb55cc38-6a33-41aa-b63d-830e246aa3d5",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "ff456d5a-d53c-42cb-be66-60d72acd085a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e4327682-3c6e-4994-8656-06254f90b080",
+            "type": "addDoc",
+            "props": {
+              "fileId": "bb0d695c-a8c6-4398-88f9-487942177563",
+              "title": "Fibonacci Number Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "d3656a08-8879-45bf-b88d-a73fa850092d",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "3f67b4b4-3c3a-486b-9c31-3ba756cedbaa",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ef931208-0dbe-47f4-90dc-c469cb2560ed",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(1)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "c8e391d6-67ea-4e28-99c2-9c04ad5b76e5",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "848f2e0b-f476-47d7-9845-46a205d9b1ea",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1dd56dd5-33e9-4915-ab81-569fbefb2f1c",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Although Fibonacci can be solved recursively, the recursive solution has exponential time complexity. The iterative dynamic programming approach is much more efficient and uses constant extra space.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e4d4b4c7-5d27-43eb-9077-0fa98d1c3c1d",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "4492ee50-342e-4ffd-b27e-3fdc4c5ad22d",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6e92fce3-d564-44e5-a83c-5349a448fa55",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Handle base cases first.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "86f37690-20a0-4e10-a2c7-c35d11819818",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use two variables instead of an array.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "11e34db3-cd7e-48c6-9042-12b2a319ef8d",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dynamic Programming avoids repeated calculations.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e3c830a6-1b87-48df-9e3a-6048668bb3c9",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(1)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " space.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785383283334,
+  "updatedAt": 1785383407406
+}

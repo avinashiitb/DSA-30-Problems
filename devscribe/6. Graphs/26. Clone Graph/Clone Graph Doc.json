@@ -1,0 +1,1220 @@
+{
+  "fileId": "cf0da9fb-1a26-4194-8643-cbc5413b515c",
+  "_id": "cf0da9fb-1a26-4194-8643-cbc5413b515c",
+  "title": "Clone Graph Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "db500aeb-9c71-4086-ae96-7aa4004eb618",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "26. Clone Graph",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e57d5d7f-cf75-4678-89bf-373533e39451",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "23ff1e92-929e-4976-81b5-098a9ae9ec29",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given a reference of a node in a connected undirected graph, return a ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "deep copy (clone)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " of the graph.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6cb47ef4-e7ca-4ade-9c29-cf555f44e07e",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Each node contains:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ef8c4b14-39d5-4907-bbf2-8a844bd76182",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "int val",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "eaf2a51d-1fc0-44d9-b2c5-79334f919685",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "List<Node> neighbors",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9f2ae34f-768c-4e80-95ed-401692dab149",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A deep copy means every node and every edge in the original graph should be recreated.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e9258959-e53d-4009-97f0-8c88098c70a0",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "7c5d0646-f760-4590-af9a-e84d33ed05ed",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9a759694-ad3c-4fee-92a4-11260748c969",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "7e2e7616-359b-46f0-8986-05353e426256",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "4a777497-9bfe-467d-92d2-d77d9af88008",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "d2e21f34-28f1-4497-bc81-d08470562586",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "4b64a00c-d46f-424a-bdef-9e1886c2cdb9",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "adjList = [[2,4],[1,3],[2,4],[1,3]]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "a1537df0-c5d4-4de3-9c40-ee4428203311",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "624307cb-e3e2-4441-9d18-cdb939f5ac26",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[[2,4],[1,3],[2,4],[1,3]]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "3a47e895-c09f-46ef-b5ae-2f4c850ab615",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "b9fa05b5-55fe-4054-b4ea-615a74682150",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "Original Graph             Clone Graph\n\n  1 ----- 2                 1 ----- 2\n  |       |                 |       |\n  |       |                 |       |\n  4 ----- 3                 4 ----- 3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "680cb0c9-7247-47ba-8b68-6b88a5842b75",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Both graphs have the same structure but consist of different node objects.",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "1e4abbb5-b17f-4b92-bf47-0b9cf88832ee",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "120242ca-eb19-453a-9961-336ae4a45050",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "52d9f71e-5214-4c28-8c92-890bfe1f4d2f",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "b4c1ef39-b463-416d-bd15-4c49f3215399",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "adjList = [[]]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "eabc0033-2d34-4a36-a5a3-67dce63285d2",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "9c58b684-5486-4b12-85e5-e650358cbda8",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[[]]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "4b01696c-e05d-4dcf-bda6-c9fb76b64f44",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "e4edf6f0-fb81-4ecc-89ea-04270752da8c",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "f2bea275-fc66-48c0-afec-13a4cac9ea40",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 3",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ce98d5c3-10a7-42cf-945c-4ff8a03b4b8e",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "fda93ec8-ccda-4f5e-a21b-5f90a8ac68c4",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "adjList = []",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "9b0620eb-f63c-4cc8-b86d-46e72abb638b",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "abbd8265-8d59-4f29-8fb8-4f114998ab1c",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "db81e6d6-30b0-4522-b10b-0ce534e0528c",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9617389b-b1b5-4ef3-b29f-4f5b3d9771bc",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "bc53fc0e-207c-488c-b3d9-6b72ac3f7d57",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Depth First Search (DFS)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " with a ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "HashMap",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "12831879-2810-4c78-b04b-77198c07cc4e",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "76691f59-0b16-464e-a385-ecc16aad9a41",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the node is ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d0086a03-4c48-4e33-aa6c-5ab2acaf3f51",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the node has already been cloned, return the cloned node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ecd35998-85e8-465b-bfa5-fba81042ce4c",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Create a new node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fab681f4-ebb0-46ee-94bb-85dd50fef212",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store the mapping:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "e5d327e6-e357-4ec7-a527-f8af228315d0",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Original Node → Cloned Node",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "a2698a79-bfb3-44e0-ae4f-3f6f8eb4b96e",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Recursively clone every neighbor.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c14383ac-5f32-429f-acb0-790699bd39b3",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Add cloned neighbors to the cloned node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "04fa02f3-03a3-4b4d-911c-41dc31f95715",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "f103ff4c-cefa-404e-a2f6-39ac2db7b6ac",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "607bf7c5-0513-4163-846f-b5f36c171fb6",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "Original\n\n1 ---- 2\n|      |\n4 ---- 3\n\nClone(1)\n\nCreate clone of 1\n\n↓\n\nClone neighbor 2\n\n↓\n\nClone neighbor 3\n\n↓\n\nClone neighbor 4\n\n↓\n\nAlready visited?\n\nReturn cloned node.\n\nGraph cloned successfully.",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "75b23a5a-682c-4567-afb9-f51a9e63311c",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "8550c063-5506-49ff-bca4-d234ab66d4aa",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "eb709ebc-f4d9-4c5b-85d9-f14bd2ffd007",
+            "type": "addDoc",
+            "props": {
+              "fileId": "f9082675-3a86-492c-a3f4-74c9cc7101e7",
+              "title": "Clone Graph Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "27fe339c-a9fe-4f9c-9aeb-ce8773024511",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "d17c4f1c-7236-4602-b133-51a337339a4d",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fad98759-9e56-451c-8ff9-510ea6ac012c",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(V + E)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(V)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "194f192f-949b-4fa6-ac00-e08866af13a8",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "47f420ff-d1c9-490b-aa3f-ef24f80690d2",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "V",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of vertices",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2d388826-8b1c-42db-80dd-9f0dd20e17ec",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "E",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of edges",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fd653711-5c3c-449a-ad17-247d5f53dec1",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "e35dc21a-d664-4906-b408-8fd329395247",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "21e1f911-b4b5-49c0-9459-52ada3ea3aad",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Always maintain a map from the original node to the cloned node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "00581560-829d-4b3c-a1f8-31197017b40f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Without this map, cycles in the graph will cause infinite recursion.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7d3fa6af-cb0a-4a23-a248-1c36a8ba5e34",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "080c2d4d-7f4f-49df-9b02-431530d95992",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f27733bf-3672-4c11-9bb0-14c204ae9147",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "DFS + HashMap.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5e0f94c7-cbd1-4a7f-a807-3d015681fa70",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Clone each node only once.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b127dd5d-0834-49aa-a1bc-188a95dc98ca",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Handle cycles safely.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "233a8352-2e53-4aa0-986e-429137a84342",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Deep copy every edge.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e4e965d0-3fb3-40ef-89ca-880007c48f2d",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(V + E)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785381879641,
+  "updatedAt": 1785382143936
+}

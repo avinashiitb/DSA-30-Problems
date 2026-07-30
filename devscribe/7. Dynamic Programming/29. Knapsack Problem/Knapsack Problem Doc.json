@@ -1,0 +1,1200 @@
+{
+  "fileId": "6181eec4-ae78-4866-a0d5-0b67fca08fe1",
+  "_id": "6181eec4-ae78-4866-a0d5-0b67fca08fe1",
+  "title": "Knapsack Problem Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "fecafcd8-ca88-480d-8368-cacf7e488b34",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "29. 0/1 Knapsack Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "424675e8-1dc5-4c6a-b556-700bb191b5d6",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "926c9acf-94ef-45a4-ad4a-518cfc88e8ca",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "bc295cf3-ef74-4535-9abc-bb55be7e83b7",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "An array ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "weights[]",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " representing the weight of each item.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a16001ca-9b8c-4d8f-89ac-2402658028b7",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "An array ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "values[]",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " representing the value of each item.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2efea0b3-0504-4cd7-b10c-28d3395fa46f",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A knapsack with capacity ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "W",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "32ff6f14-a2f9-496f-873a-d3535dae4773",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Determine the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "maximum total value",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " that can be obtained by selecting items.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "260d9b3a-0b80-48d9-9d22-ba47a5886948",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Each item can either be:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1909bde1-5d67-4a3b-9c6b-5944c0c38adb",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Picked ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "once",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", or",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "037693f4-8352-478f-a00c-6e51d2b313dd",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Not picked.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "52973b67-d3b2-4d0a-b544-59d5863f66fd",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "An item ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "cannot",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " be selected multiple times.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "43585134-a265-49bf-bb1e-e010880a50fb",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "a9f95d56-4e02-4df3-beb7-c02ff8b599a3",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a11ee270-4a4e-49ec-a021-206eb3906310",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "8eb7fb6d-68ad-4b5f-b0ba-e3881784573a",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "b2166f76-6b1c-47e6-91c3-b118a8e1b777",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "85b26bcb-45dd-4ee2-b5f9-19324341dc0d",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "2689dd30-c081-4541-9dde-7c4a954fab97",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "weights = [1,3,4,5]\nvalues  = [1,4,5,7]\nW = 7",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "f0554b37-2242-408f-9067-1635f11a356e",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "4e91c909-650f-418d-b007-b19b495a3880",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "9",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "fe9b63b2-98e5-4636-85a8-571022d05297",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "7aa17136-4595-4a25-9abe-82d2747310e7",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "Choose:\n\nWeight = 3  Value = 4\nWeight = 4  Value = 5\n\nTotal Weight = 7\nTotal Value = 9",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "81c41104-ae45-4749-a501-e29b20c2c9b0",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "986cff66-142f-414b-be29-4914f6488e7a",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "d415a0b4-71fd-4080-a403-93482284e472",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "6e2d3c8b-28b8-4f01-9f5f-2972257b62bb",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "1ce327c3-78ae-4b68-a757-593115525018",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "weights = [2,3,4]\nvalues = [4,5,6]\nW = 5",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "cf35002e-213f-42c7-9d35-cf62ede4d771",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "406d8315-5e29-4964-84ca-d03bef47a572",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "9",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "05dd2c57-eee6-4daf-a352-9e210f0b144c",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "07711313-ce5f-4e3f-aa1d-d1b14fb57212",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1a7685d7-d20b-4938-94dc-4fdf18cb7d6f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Dynamic Programming",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "805c1f3c-134f-46b7-9ab0-5fa8b27c31b1",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Let:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2cd492ca-3280-4b4d-84b4-04d27a040c98",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[i][w]\n\nMaximum value using first i items\nwith capacity w.",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "e4080b46-083b-4edd-a542-bdde47b65192",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Transition",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5ea801d0-df29-4539-a5da-86a956cb0f0f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "For every item,",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f7d0efa1-b5fc-4475-bfcf-782b84b87c8f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If current weight fits:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "346ee631-5952-4579-bc47-9ca7f3f03490",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[i][w] = max(\n\nTake current item,\n\nSkip current item\n\n)",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "f0a358f4-7ead-4cb0-8b5b-54612e40310f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Otherwise,",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ad64d63a-765e-4b92-b20a-1ed2d0ea9d58",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[i][w] = dp[i-1][w]",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "9e610a74-0869-40d4-bb75-69d89126f83e",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "f935a962-ed90-43b3-911f-fcee4dd7db66",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0cde88c5-d888-4c89-8321-c58893746b01",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "weights = [1,3,4]\n\nvalues = [1,4,5]\n\nCapacity = 4\n\nPick item 1\n\nValue = 1\n\nCapacity left = 3\n\nPick item 2\n\nValue = 4\n\nTotal = 5\n\nBetter than taking item 3 alone.\n\nAnswer = 5",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "f88cea2c-f120-425f-8165-f66ec0a60c50",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "a5eb6933-bd1e-40f6-98fa-d231901ac140",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d6af9ed6-f775-4342-817c-7d67f29181b8",
+            "type": "addDoc",
+            "props": {
+              "fileId": "eb266d96-768d-4f2f-ade2-b93aa509c28a",
+              "title": "Knapsack Problem Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "c0a2c6d5-f69f-49cd-99b6-0b8fe812fb82",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "1c7c6199-8d05-412e-a3d0-d7bb8e5f7ca8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6ad8e46e-12c3-4ec2-b629-0dc5be501d89",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n × W)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n × W)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "09c28264-b770-4715-851f-89bcbdd97f8b",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a22afd41-e3f1-4657-a2e9-9ccfb03e8178",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of items",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "023fdebb-1c4c-470b-b410-82bd10f51691",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "W",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Knapsack capacity",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "da0f1360-6fb6-4f3e-9047-4bee1abef9de",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "2ec79051-df7c-4caa-a696-187e3b1740e0",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7ce373cd-4e0e-4292-986b-bff681f26596",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The 0/1 Knapsack is one of the most important Dynamic Programming problems.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5c459122-84ce-41fc-b907-31147a627be0",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Remember:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "13aa4f7c-0a57-45ec-a545-498fa7b263b7",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "0/1 Knapsack → Pick once",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4e1bfb98-7c20-45e3-a8c4-27351e1a29bc",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Unbounded Knapsack → Pick unlimited times",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e6078479-cb71-4d1a-99b8-949cca91a951",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "ad178fa3-fdc8-4810-b94d-21465b70b2aa",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e8734eea-25d1-4ea5-a377-b3ddc54be00e",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dynamic Programming problem.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "97110cd1-85e6-4728-8d86-993621de6ed4",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Each item is picked at most once.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c1bc74a9-4374-4e63-95d3-eef634e4bd59",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Build DP table bottom-up.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a954c8d8-49c5-4735-a4b2-a105b854e148",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n × W)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785383469689,
+  "updatedAt": 1785383581411
+}

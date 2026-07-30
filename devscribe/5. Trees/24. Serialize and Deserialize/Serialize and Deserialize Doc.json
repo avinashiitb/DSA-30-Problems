@@ -1,0 +1,980 @@
+{
+  "fileId": "9c426d41-bfd9-404f-a679-7204ffe4115a",
+  "_id": "9c426d41-bfd9-404f-a679-7204ffe4115a",
+  "title": "Serialize and Deserialize Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "cce09682-b0f4-4b1b-bc46-b970585f3a7b",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "24. Serialize and Deserialize Binary Tree",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "8fce349e-227f-48cc-ada9-a23f5647b6e5",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b4d5ba1b-0cd7-4cd7-8669-73f639100f0b",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Design an algorithm to serialize and deserialize a binary tree.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "49efccf5-251f-4591-939b-363c572703dd",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Serialize",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " converts a binary tree into a string.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "78089ddc-97da-454e-b828-b3b86e53efa9",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Deserialize",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " reconstructs the original binary tree from the serialized string.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "914cc50a-5e8a-4554-8567-529eeeca0c00",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "There is no restriction on how the serialization should work, as long as deserialization recreates the exact same tree.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "64c4b627-9623-4cfa-9451-48bbd43d5662",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "59264be4-49d2-4be8-a0b0-22f76fad0714",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0aef7177-4213-4cf1-bde9-b7fd40843ba2",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "497d2536-10c1-4148-9fb2-302722b10646",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Input",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9139992c-562d-415e-aed1-b1094684e8c7",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "root = [1,2,3,null,null,4,5]",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "6842fac3-cec4-4f97-b018-02249f18e451",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Serialized",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0ce86b36-4029-41f5-a927-f5a76c517771",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "1,2,3,null,null,4,5,null,null,null,null",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "857ff23e-b18d-4ad6-a2e6-714fa79a48f3",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Deserialized",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "80ad7ebb-8a53-40c5-9d68-4baa3b0206d7",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "        1\n      /   \\\n     2     3\n          / \\\n         4   5",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "b408a261-f028-4ca5-a124-6bdbd65377bd",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "82ec358a-affd-4471-89b3-ed1ec5922488",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "75a28a26-e088-4907-9e76-6484b85e4d2f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Level Order Traversal (Breadth First Search)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9e30c103-f591-4351-b88c-aab9b40d92b8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Serialization",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5d3e2519-10de-4f9d-b779-f513b4f9ab34",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Traverse the tree using a queue.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "460fd58c-b3ea-43b4-964e-464380702681",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store every node value.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "65494dc9-4ad4-4ac3-8311-5d6b9768ef5d",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "\"null\"",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " for missing children.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e50cd4d9-9be2-401c-bbfc-f81d08397f3c",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Join all values using commas.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "febe95a5-a970-4ce2-ac3a-ffd09b41831a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Deserialization",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "3da633e0-bef7-47c8-b563-8a3ce77538a3",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Split the serialized string.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0669a5b0-9b12-4dcf-8bc4-8d090bf64109",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Create the root node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2f5d56c3-59b9-465f-8a32-295a44ed4a71",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use a queue.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "182f87ea-8eef-42c0-98b4-e852e854d949",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Assign left and right children one by one.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "85c3cdcf-00d4-4fcc-a5b3-73346a9f479a",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return the reconstructed tree.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2685b832-4920-4885-9db1-5784d3ad2836",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "c87c7ded-5925-4c6e-82b3-586bfc55607a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1d20046d-bbe3-4946-bc38-cff47543f080",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "Tree\n\n        1\n      /   \\\n     2     3\n          / \\\n         4   5\n\nQueue\n\n1\n\nOutput\n1\n\nQueue\n\n2,3\n\nOutput\n1,2,3\n\nQueue\n\nnull,null,4,5\n\nOutput\n1,2,3,null,null,4,5\n\nContinue until queue becomes empty.",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "aa42159c-b9b1-4c78-8053-b46ec97e40f3",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "ea8acee1-e10f-46a5-a488-dab7f1db92dc",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6d88becf-d3b9-403e-8249-30da385651c4",
+            "type": "quote",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Embed the Java code file here.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c21c5c3c-3742-4072-be88-ac9ad1754608",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "70c42246-5df8-44a2-acb6-034ac70a415e",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "463a7338-c09a-41bb-8b21-39a82cbf87ac",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "59d2a7e6-755c-45e0-85c0-25e510c7e465",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c9349547-7a25-4e7b-b585-64dc9e8be41c",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of nodes",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "291cf122-7c79-4d94-ad19-684e841e6c1e",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "3e5c7da8-9ea1-48ff-8ddb-e56392a8fcfa",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "97b9ba25-bd95-48eb-a53b-618947c65247",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Always serialize ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " nodes.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2d18eb63-2b27-49ca-8026-ba1bfc55129b",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Otherwise, the exact tree structure cannot be reconstructed during deserialization.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d70414a4-3340-4afd-8979-812dc99dd5ae",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "00bd6943-294b-4f05-8ee0-8f57a6ab3f4e",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ca71121c-0de8-4055-919a-9850a9fae9ef",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use BFS.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "583cccc9-99dd-4a2a-b133-1fbaf75a9656",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store null nodes.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "8d1038e0-786c-407b-841c-1488ae87014d",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Queue is used in both serialization and deserialization.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ef9a09f1-bc7e-4cab-919f-4fef1e36e409",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785381164698,
+  "updatedAt": 1785381202907
+}

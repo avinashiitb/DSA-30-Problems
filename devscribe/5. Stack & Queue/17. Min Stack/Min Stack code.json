@@ -10,7 +10,7 @@
       "data": {
         "code": "import java.util.*;\n\nclass MinStack {\n\n    private Stack<Integer> stack;\n    private Stack<Integer> minStack;\n\n    public MinStack() {\n        stack = new Stack<>();\n        minStack = new Stack<>();\n    }\n\n    public void push(int val) {\n\n        stack.push(val);\n\n        if (minStack.isEmpty() || val <= minStack.peek()) {\n            minStack.push(val);\n        }\n    }\n\n    public void pop() {\n\n        if (stack.peek().equals(minStack.peek())) {\n            minStack.pop();\n        }\n\n        stack.pop();\n    }\n\n    public int top() {\n        return stack.peek();\n    }\n\n    public int getMin() {\n        return minStack.peek();\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n\n        // This is custom code to read Test case in Devscribe\n        String[] operations = Input.getArray(\"operations\");\n        String[] values = Input.getArray(\"values\");\n\n        MinStack minStack = new MinStack();\n\n        for (int i = 0; i < operations.length; i++) {\n\n        String operation = operations[i].replace(\"\\\"\", \"\").trim();\n    \n        switch (operation) {\n    \n            case \"push\":\n                int value = Integer.parseInt(values[i].replace(\"\\\"\", \"\").trim());\n                minStack.push(value);\n                System.out.println(\"push(\" + value + \")\");\n                break;\n    \n            case \"pop\":\n                minStack.pop();\n                System.out.println(\"pop()\");\n                break;\n    \n            case \"top\":\n                System.out.println(\"top() = \" + minStack.top());\n                break;\n    \n            case \"getMin\":\n                System.out.println(\"getMin() = \" + minStack.getMin());\n                break;\n        }\n}\n    }\n}",
         "language": "java",
-        "output": "push(5)\npush(3)\ngetMin() = 3\n",
+        "output": "push(-2)\npush(0)\npush(-3)\ngetMin() = -3\npop()\ntop() = 0\ngetMin() = -2\n",
         "panelOpen": true,
         "wordWrap": false,
         "testCases": [
@@ -223,10 +223,10 @@
             ]
           }
         ],
-        "selectedTestCaseId": "tc_1785297514572_1"
+        "selectedTestCaseId": "tc_1785297514572_0"
       }
     }
   ],
   "createdAt": 1785297485728,
-  "updatedAt": 1785298330508
+  "updatedAt": 1785346507210
 }

@@ -1,0 +1,1250 @@
+{
+  "fileId": "a3445f8c-ffae-4df9-827f-d31a3bfcdf41",
+  "_id": "a3445f8c-ffae-4df9-827f-d31a3bfcdf41",
+  "title": "Same Tree Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "ea3a7118-d31f-4b0f-8153-1de93c480032",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "23. Same Tree",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c1c072ed-3a6d-4e41-8e68-0858a3b5ddf6",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d50b8991-8790-46ae-b7be-e399a11e1852",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given the roots of two binary trees ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "p",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "q",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", write a function to check if they are the same.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6489cfc0-20ed-49f2-9d38-ad05b354cc44",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Two binary trees are considered the same if they are ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "structurally identical",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and the nodes have the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "same value",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6d7c5ddc-6d14-44c2-a33d-a51da3cbb51b",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "38ff82c2-145e-44ba-9337-155b37f5db8d",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "30c19d34-ddfe-4a92-adbd-e018e052f42b",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "39375945-cc59-49c3-9e3e-8ca84cb0d86e",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "8e46d224-e514-4b15-a243-7b2dfecd0760",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "37b2b6dc-9cc1-4475-b2f3-498f4657316a",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "03dc9d6c-e2f5-49e3-bd66-e4b4191ffe18",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "p = [1,2,3]\nq = [1,2,3]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "481477a6-0030-4c10-8919-2218189db5bc",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "d26f4a2e-0f55-4110-b866-77534f0d7c66",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "true",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "023b29c2-79e7-4eca-ae37-1df430f70ad8",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "34633e31-7ec1-4c9e-a1cd-db0986c2b9b1",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "7d1d1acf-b11f-4451-a11e-a0b5cc8c7c34",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "17e0bbb4-8ee7-4014-b968-4f3dd76b207c",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "95c80daa-b950-4355-ba3a-cde62d0ca109",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "p = [1,2]\nq = [1,null,2]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "2cc8eef1-7f78-4ace-a480-bd5d6b1d7049",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "1a10aa34-ee92-4ddf-9611-63c8d5c86217",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "false",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "534b3889-4d8f-4af9-afca-3138cf681a4c",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "c117824c-2e5e-4657-8a48-a6dabe7b9737",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "8b778bbf-8dd2-4e7c-8af3-1b6e28df0258",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 3",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "b1196620-badd-4a45-9e2a-dc125e2e07ed",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "e64a6d46-f3e2-43e6-bc13-ea58a890200b",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "p = [1,2,1]\nq = [1,1,2]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "ad8d4cf8-556d-466f-8ed7-9fe0f4ce7c44",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "4afa344c-3bb6-469e-b4c6-490597550b13",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "false",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "d4322aa7-033d-447e-b626-3ae9cdf0c2fd",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6c4f49bd-2a36-4b1d-8e9d-7897c9404fc9",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5102ca41-c37e-4e7c-ade3-a1bcda21d61c",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Depth First Search (DFS)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a1d39297-338e-4598-8544-4eee2303ea85",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e4374f17-9971-49b5-81b2-85edb23ff444",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If both nodes are ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "true",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9287dff5-fb00-4b19-928e-7bd169cc307f",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If one node is ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "false",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "283be7bc-e4ac-467b-84d8-3c8133ff4f1d",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If node values are different, return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "false",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "545fc7db-6825-4a0a-86d2-df36ed93a45a",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Recursively compare:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "aa5945ec-2f9e-4a06-8afc-cba3c25495d7",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Left subtrees",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "7c78643e-4608-4334-8a7f-5e7c112214d8",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Right subtrees",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "8808b0c8-f22c-45f8-877c-ecf443706c8d",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "true",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " only if both subtrees are identical.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "bc832c67-8943-4cc8-ad80-ecae15be7005",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "8a5515de-3f9b-4e94-ba52-6717f86457a9",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "8b448f4d-3e49-4027-b50d-a78e93568d0e",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "        p                 q\n\n        1                 1\n      /   \\             /   \\\n     2     3           2     3\n\n1 == 1 ✔\n\nCompare Left\n2 == 2 ✔\n\nCompare Right\n3 == 3 ✔\n\nBoth subtrees are identical.\n\nAnswer = true",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "4db94518-6e1e-416f-9cde-cabf63e8198d",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "f9bff84c-fe03-4d71-b38c-c3d8e03d4e89",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c84ff25a-7b9e-47ae-bef7-9a3cd730438a",
+            "type": "addDoc",
+            "props": {
+              "fileId": "5305b498-037c-4156-afa5-4b56fa563572",
+              "title": "Same Tree Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "fc31d457-ba72-4405-a101-ed625ec6820b",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "38b56224-c20f-4218-b663-62f411270152",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e1ea4124-258c-4ccd-b5a4-c8ac85d185aa",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(h)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "0a18b144-9ea3-4b28-9a39-df08730ae17f",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "533d345f-5763-46aa-81ac-4bdca356f55e",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of nodes",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e8726e65-595b-4d0e-bc9b-c7f4c09c758b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "h",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Height of the tree",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fb9fcdc5-e58e-4c79-b32f-cce2e5e02ad6",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "5d32b6ee-885a-43c1-812c-ba3fc0dd4c43",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2649255b-9a5b-4dd1-b8c0-e0429047b7c8",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Always check the base cases first:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "619f35a2-8994-4165-8560-4bca480aa9cf",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Both nodes are ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e9a71807-7c6c-48cb-a01d-499d91b9f019",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "One node is ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "null",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "edfe06f8-72b8-40a2-ae54-d01c08405c08",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Values are different",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "20ef39f0-1168-441a-be35-5e57722bb253",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Then recursively compare both left and right subtrees.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0adc8f39-4318-4362-87cf-161b2ab689a5",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "b8cc5a9f-ffaa-4e76-8367-b9ac9559e6a3",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2300143b-f464-4e1d-a550-b20b95154c08",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use DFS recursion.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a62818ea-a89d-4511-9665-5c51cb8992ba",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Compare both structure and node values.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "24de8741-0843-4407-b3b6-86bec5355c70",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Both left and right subtrees must match.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "04c1801f-ad21-4e2d-9715-b97925cb81a9",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785380684233,
+  "updatedAt": 1785380822760
+}

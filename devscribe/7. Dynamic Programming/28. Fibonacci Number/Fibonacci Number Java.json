@@ -1,0 +1,200 @@
+{
+  "fileId": "bb0d695c-a8c6-4398-88f9-487942177563",
+  "_id": "bb0d695c-a8c6-4398-88f9-487942177563",
+  "title": "Fibonacci Number Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "class Solution {\n\n    public int fib(int n) {\n\n        if (n == 0) {\n            return 0;\n        }\n\n        if (n == 1) {\n            return 1;\n        }\n\n        int prev2 = 0;\n        int prev1 = 1;\n\n        for (int i = 2; i <= n; i++) {\n\n            int current = prev1 + prev2;\n\n            prev2 = prev1;\n            prev1 = current;\n        }\n\n        return prev1;\n    }\n\n    public static void main(String[] args) {\n\n        // Custom DevScribe input\n        int n = Input.getInt(\"n\");\n        int output = Input.getInt(\"output\");\n\n        Solution sol = new Solution();\n\n        System.out.println(\"Expected: \" + output);\n        System.out.println(\"Actual: \" + sol.fib(n));\n    }\n}",
+        "language": "java",
+        "output": "Expected: 0\nActual: 0\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785383349250_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785383349250_0_0",
+                "key": "n",
+                "value": "0"
+              },
+              {
+                "id": "in_1785383349250_0_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785383349250_1_0",
+                "key": "n",
+                "value": "1"
+              },
+              {
+                "id": "in_1785383349250_1_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785383349250_2_0",
+                "key": "n",
+                "value": "2"
+              },
+              {
+                "id": "in_1785383349250_2_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785383349250_3_0",
+                "key": "n",
+                "value": "3"
+              },
+              {
+                "id": "in_1785383349250_3_1",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785383349250_4_0",
+                "key": "n",
+                "value": "5"
+              },
+              {
+                "id": "in_1785383349250_4_1",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785383349250_5_0",
+                "key": "n",
+                "value": "10"
+              },
+              {
+                "id": "in_1785383349250_5_1",
+                "key": "output",
+                "value": "55"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785383349250_6_0",
+                "key": "n",
+                "value": "20"
+              },
+              {
+                "id": "in_1785383349250_6_1",
+                "key": "output",
+                "value": "6765"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785383349250_7_0",
+                "key": "n",
+                "value": "30"
+              },
+              {
+                "id": "in_1785383349250_7_1",
+                "key": "output",
+                "value": "832040"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785383349250_8_0",
+                "key": "n",
+                "value": "0"
+              },
+              {
+                "id": "in_1785383349250_8_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785383349250_9_0",
+                "key": "n",
+                "value": "1"
+              },
+              {
+                "id": "in_1785383349250_9_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383349250_10",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785383349250_10_0",
+                "key": "n",
+                "value": "45"
+              },
+              {
+                "id": "in_1785383349250_10_1",
+                "key": "output",
+                "value": "1134903170"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785383349250_0"
+      }
+    }
+  ],
+  "createdAt": 1785383291087,
+  "updatedAt": 1785383416202
+}

@@ -1,0 +1,284 @@
+{
+  "fileId": "773e53bf-41d3-40c8-9065-ef1b60f9b70b",
+  "_id": "773e53bf-41d3-40c8-9065-ef1b60f9b70b",
+  "title": "Lowest Common Ancestor Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "import java.util.*;\n\nclass TreeNode {\n\n    int val;\n    TreeNode left;\n    TreeNode right;\n\n    TreeNode(int val) {\n        this.val = val;\n    }\n}\n\nclass Solution {\n\n    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\n\n        while (root != null) {\n\n            if (p.val < root.val && q.val < root.val) {\n                root = root.left;\n            }\n            else if (p.val > root.val && q.val > root.val) {\n                root = root.right;\n            }\n            else {\n                return root;\n            }\n        }\n\n        return null;\n    }\n\n    // Build tree from level-order array\n    private static TreeNode buildTree(Integer[] values) {\n\n        if (values.length == 0 || values[0] == null) {\n            return null;\n        }\n\n        TreeNode root = new TreeNode(values[0]);\n\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n\n        int index = 1;\n\n        while (!queue.isEmpty() && index < values.length) {\n\n            TreeNode current = queue.poll();\n\n            if (index < values.length && values[index] != null) {\n                current.left = new TreeNode(values[index]);\n                queue.offer(current.left);\n            }\n            index++;\n\n            if (index < values.length && values[index] != null) {\n                current.right = new TreeNode(values[index]);\n                queue.offer(current.right);\n            }\n            index++;\n        }\n\n        return root;\n    }\n\n    // Find node by value\n    private static TreeNode findNode(TreeNode root, int value) {\n\n        while (root != null) {\n\n            if (value < root.val) {\n                root = root.left;\n            } else if (value > root.val) {\n                root = root.right;\n            } else {\n                return root;\n            }\n        }\n\n        return null;\n    }\n\n    public static void main(String[] args) {\n\n        // Custom DevScribe input\n        Integer[] root = Input.getIntegerArray(\"root\");\n        int p = Input.getInt(\"p\");\n        int q = Input.getInt(\"q\");\n        int output = Input.getInt(\"output\");\n\n        TreeNode tree = buildTree(root);\n\n        TreeNode nodeP = findNode(tree, p);\n        TreeNode nodeQ = findNode(tree, q);\n\n        Solution sol = new Solution();\n\n        TreeNode ans = sol.lowestCommonAncestor(tree, nodeP, nodeQ);\n\n        System.out.println(\"Expected: \" + output);\n        System.out.println(\"Actual: \" + (ans != null ? ans.val : \"null\"));\n    }\n}",
+        "language": "java",
+        "output": "Expected: 6\nActual: 6\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785347606684_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785347606684_0_0",
+                "key": "root",
+                "value": "[6,2,8,0,4,7,9,null,null,3,5]"
+              },
+              {
+                "id": "in_1785347606684_0_1",
+                "key": "p",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_0_2",
+                "key": "q",
+                "value": "8"
+              },
+              {
+                "id": "in_1785347606684_0_3",
+                "key": "output",
+                "value": "6"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785347606684_1_0",
+                "key": "root",
+                "value": "[6,2,8,0,4,7,9,null,null,3,5]"
+              },
+              {
+                "id": "in_1785347606684_1_1",
+                "key": "p",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_1_2",
+                "key": "q",
+                "value": "4"
+              },
+              {
+                "id": "in_1785347606684_1_3",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785347606684_2_0",
+                "key": "root",
+                "value": "[2,1]"
+              },
+              {
+                "id": "in_1785347606684_2_1",
+                "key": "p",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_2_2",
+                "key": "q",
+                "value": "1"
+              },
+              {
+                "id": "in_1785347606684_2_3",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785347606684_3_0",
+                "key": "root",
+                "value": "[5,3,6,2,4,null,7]"
+              },
+              {
+                "id": "in_1785347606684_3_1",
+                "key": "p",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_3_2",
+                "key": "q",
+                "value": "4"
+              },
+              {
+                "id": "in_1785347606684_3_3",
+                "key": "output",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785347606684_4_0",
+                "key": "root",
+                "value": "[5,3,6,2,4,null,7]"
+              },
+              {
+                "id": "in_1785347606684_4_1",
+                "key": "p",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_4_2",
+                "key": "q",
+                "value": "7"
+              },
+              {
+                "id": "in_1785347606684_4_3",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785347606684_5_0",
+                "key": "root",
+                "value": "[10,5,15,3,7,12,18]"
+              },
+              {
+                "id": "in_1785347606684_5_1",
+                "key": "p",
+                "value": "12"
+              },
+              {
+                "id": "in_1785347606684_5_2",
+                "key": "q",
+                "value": "18"
+              },
+              {
+                "id": "in_1785347606684_5_3",
+                "key": "output",
+                "value": "15"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785347606684_6_0",
+                "key": "root",
+                "value": "[10,5,15,3,7,12,18]"
+              },
+              {
+                "id": "in_1785347606684_6_1",
+                "key": "p",
+                "value": "3"
+              },
+              {
+                "id": "in_1785347606684_6_2",
+                "key": "q",
+                "value": "7"
+              },
+              {
+                "id": "in_1785347606684_6_3",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785347606684_7_0",
+                "key": "root",
+                "value": "[1]"
+              },
+              {
+                "id": "in_1785347606684_7_1",
+                "key": "p",
+                "value": "1"
+              },
+              {
+                "id": "in_1785347606684_7_2",
+                "key": "q",
+                "value": "1"
+              },
+              {
+                "id": "in_1785347606684_7_3",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785347606684_8_0",
+                "key": "root",
+                "value": "[2,1]"
+              },
+              {
+                "id": "in_1785347606684_8_1",
+                "key": "p",
+                "value": "1"
+              },
+              {
+                "id": "in_1785347606684_8_2",
+                "key": "q",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_8_3",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785347606684_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785347606684_9_0",
+                "key": "root",
+                "value": "[8,4,10,2,6,9,12]"
+              },
+              {
+                "id": "in_1785347606684_9_1",
+                "key": "p",
+                "value": "2"
+              },
+              {
+                "id": "in_1785347606684_9_2",
+                "key": "q",
+                "value": "12"
+              },
+              {
+                "id": "in_1785347606684_9_3",
+                "key": "output",
+                "value": "8"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785347606684_0"
+      }
+    }
+  ],
+  "createdAt": 1785347573297,
+  "updatedAt": 1785380435015
+}

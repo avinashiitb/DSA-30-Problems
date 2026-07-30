@@ -10,7 +10,7 @@
       "data": {
         "code": "class Solution {\n    public int solve(int[] A) {\n        int CurrentSum = A[0];\n        int MaxSum = A[0];\n\n        if(A.length == 0) return 0;\n        if(A.length == 1) return CurrentSum;\n      \n        for(int i = 1; i< A.length; i++) {\n          if(CurrentSum > 0) {\n            CurrentSum += A[i];\n          } else {\n            CurrentSum = A[i];\n          }\n          \n          MaxSum = Math.max(MaxSum, CurrentSum);\n        }\n\n        return MaxSum;\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"nums\"); \n        int output = Input.getInt(\"output\");\n      \n        System.out.println(\"Expected: \"+ output);\n      \n        Solution sol = new Solution();\n\n        int Profit = sol.solve(nums);\n\n        System.out.println(\"Max Sum: \" + Profit);\n    }\n}",
         "language": "java",
-        "output": "Expected: 1\nMax Sum: 1\n",
+        "output": "Expected: 6\nMax Sum: 6\n",
         "panelOpen": true,
         "wordWrap": false,
         "testCases": [
@@ -223,10 +223,10 @@
             ]
           }
         ],
-        "selectedTestCaseId": "tc_1785045868289_1"
+        "selectedTestCaseId": "tc_1785045868289_0"
       }
     }
   ],
   "createdAt": 1785210624223,
-  "updatedAt": 1785263823286
+  "updatedAt": 1785346436286
 }

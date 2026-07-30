@@ -1,0 +1,200 @@
+{
+  "fileId": "08fb84f8-0858-4c7d-b3b1-c04d156588b0",
+  "_id": "08fb84f8-0858-4c7d-b3b1-c04d156588b0",
+  "title": "Number of Islands Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "class Solution {\n\n    public int numIslands(char[][] grid) {\n\n        if (grid == null || grid.length == 0) {\n            return 0;\n        }\n\n        int islands = 0;\n\n        for (int i = 0; i < grid.length; i++) {\n\n            for (int j = 0; j < grid[0].length; j++) {\n\n                if (grid[i][j] == '1') {\n\n                    islands++;\n                    dfs(grid, i, j);\n                }\n            }\n        }\n\n        return islands;\n    }\n\n    private void dfs(char[][] grid, int row, int col) {\n\n        if (row < 0 ||\n            col < 0 ||\n            row >= grid.length ||\n            col >= grid[0].length ||\n            grid[row][col] == '0') {\n\n            return;\n        }\n\n        grid[row][col] = '0';\n\n        dfs(grid, row + 1, col);\n        dfs(grid, row - 1, col);\n        dfs(grid, row, col + 1);\n        dfs(grid, row, col - 1);\n    }\n\n    // Convert String[] to char[][]\n    private static char[][] buildGrid(String[] rows) {\n\n        char[][] grid = new char[rows.length][];\n\n        for (int i = 0; i < rows.length; i++) {\n            grid[i] = rows[i].toCharArray();\n        }\n\n        return grid;\n    }\n\n    public static void main(String[] args) {\n\n        // Custom DevScribe input\n        String[] rows = Input.getArray(\"grid\");\n        int output = Input.getInt(\"output\");\n\n        char[][] grid = buildGrid(rows);\n\n        Solution sol = new Solution();\n\n        System.out.println(\"Expected: \" + output);\n        System.out.println(\"Actual: \" + sol.numIslands(grid));\n    }\n}",
+        "language": "java",
+        "output": "Expected: 1\nActual: 1\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785381613640_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785381613640_0_0",
+                "key": "grid",
+                "value": "[\"11110\",\"11010\",\"11000\",\"00000\"]"
+              },
+              {
+                "id": "in_1785381613640_0_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785381613640_1_0",
+                "key": "grid",
+                "value": "[\"11000\",\"11000\",\"00100\",\"00011\"]"
+              },
+              {
+                "id": "in_1785381613640_1_1",
+                "key": "output",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785381613640_2_0",
+                "key": "grid",
+                "value": "[\"1\"]"
+              },
+              {
+                "id": "in_1785381613640_2_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785381613640_3_0",
+                "key": "grid",
+                "value": "[\"0\"]"
+              },
+              {
+                "id": "in_1785381613640_3_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785381613640_4_0",
+                "key": "grid",
+                "value": "[\"111\",\"111\",\"111\"]"
+              },
+              {
+                "id": "in_1785381613640_4_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785381613640_5_0",
+                "key": "grid",
+                "value": "[\"101\",\"010\",\"101\"]"
+              },
+              {
+                "id": "in_1785381613640_5_1",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785381613640_6_0",
+                "key": "grid",
+                "value": "[\"10001\",\"00000\",\"10001\"]"
+              },
+              {
+                "id": "in_1785381613640_6_1",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785381613640_7_0",
+                "key": "grid",
+                "value": "[\"11100\",\"00110\",\"00110\",\"00001\"]"
+              },
+              {
+                "id": "in_1785381613640_7_1",
+                "key": "output",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785381613640_8_0",
+                "key": "grid",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785381613640_8_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785381613640_9_0",
+                "key": "grid",
+                "value": "[\"000\",\"000\"]"
+              },
+              {
+                "id": "in_1785381613640_9_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785381613640_10",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785381613640_10_0",
+                "key": "grid",
+                "value": "[\"11111\"]"
+              },
+              {
+                "id": "in_1785381613640_10_1",
+                "key": "output",
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785381613640_0"
+      }
+    }
+  ],
+  "createdAt": 1785381474242,
+  "updatedAt": 1785381619940
+}

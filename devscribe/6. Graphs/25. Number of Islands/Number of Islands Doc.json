@@ -1,0 +1,1081 @@
+{
+  "fileId": "8cc76908-eec8-4a15-9cf5-c8575a87ff96",
+  "_id": "8cc76908-eec8-4a15-9cf5-c8575a87ff96",
+  "title": "Number of Islands Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "c3ecb075-1ad2-40dc-8a8c-60b37589fef7",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "25. Number of Islands",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "061ffb91-d84b-4215-ab8f-25807efd430b",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "adaec603-3b06-43a4-9b18-befb34d60db9",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given an ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "m x n",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " 2D binary grid where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1fcef6b4-638e-49c0-a336-9bcc627aa6cc",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "'1'",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " represents land.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c32b69a1-5ed4-4ea0-bd9c-5292f832738a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "'0'",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " represents water.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "834ca677-ba6e-4971-9ca3-b4d40a63b3af",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return the number of islands.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "91898c3e-1f5a-45a1-87af-c01a57e8404a",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are surrounded by water.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6bfe1f72-e679-4b33-a313-422cb944ae97",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "4e134f36-0ead-4a8a-a5d4-963ba0697090",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "937023b0-30ea-48ba-b9e3-ac4a539878da",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "a0bdbf4a-a325-47b5-bf3b-7e460415cacf",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "4b75acaf-5b92-4803-8713-4571a9b5333b",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "42b95bee-80ee-4bc4-9622-cf4491cf1431",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "59e5e3b1-3036-46a1-b1f0-ff6424894713",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "grid =\n[\n [\"1\",\"1\",\"1\",\"1\",\"0\"],\n [\"1\",\"1\",\"0\",\"1\",\"0\"],\n [\"1\",\"1\",\"0\",\"0\",\"0\"],\n [\"0\",\"0\",\"0\",\"0\",\"0\"]\n]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "cdbfaaa3-324b-445d-aef8-18a25b661224",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "f20fc105-2592-498c-844c-77d592862cc1",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "1",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "d93f2b63-277e-4781-a0ee-5ffa606d7fb8",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "ebdbf7be-8e23-482b-9887-ff8afad8ee6c",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "6b0015e8-f8f5-4679-a28e-5adf4a79f48c",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "f9d32ade-f163-4847-aaef-5fbf712ec87a",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "27ff0c00-6d10-4fde-a86f-dc56ed0b3587",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "grid =\n[\n [\"1\",\"1\",\"0\",\"0\",\"0\"],\n [\"1\",\"1\",\"0\",\"0\",\"0\"],\n [\"0\",\"0\",\"1\",\"0\",\"0\"],\n [\"0\",\"0\",\"0\",\"1\",\"1\"]\n]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "f99bcdde-8550-420e-841c-4b008c61a2fd",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "da528182-7e81-4276-991c-585b5cd0b513",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "34d0e69b-2223-437a-b557-74767568641f",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "543fc98b-7583-4f43-b0f1-67683667a6a3",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9655aecb-99a7-4e6e-bfa0-dce1bac63349",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Depth First Search (DFS)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7c32d8dc-6af0-48f2-bed2-fd07e8cbedc1",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9ae70689-d110-4ad5-81c9-7047ac61fd5f",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Traverse every cell.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5f5ebf1f-e265-4b02-8d84-008a41aeaf11",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the cell is land (",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "'1'",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": "):",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "53b6768a-a40a-4a56-819f-4518a214cb1e",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Increase island count.",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "04ede608-0828-46aa-a4fb-5f48831afd23",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Run DFS to visit all connected land cells.",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "56e87816-6334-49e9-ad42-c79f2cf55e6b",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Mark every visited land cell as water (",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "'0'",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ") to avoid revisiting.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4adeefa7-d2b6-4e0e-96f4-cb921c83918a",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "b836bf50-25b5-4323-beeb-8b39960dd358",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "15014655-b3e8-4bd9-b839-dc260be4e6ed",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "Grid\n\n1 1 0\n1 0 0\n0 1 1\n\nStart at (0,0)\n\nVisit\n\n1 1\n1\n\nIsland Count = 1\n\nContinue scanning...\n\nNext land at (2,1)\n\nVisit\n\n1 1\n\nIsland Count = 2\n\nAnswer = 2",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "cebedac8-956c-4ced-bf29-f9dfc83f977c",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "49e71dff-252f-416e-9af2-03a92317e1dd",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "40ad643a-2a5d-456e-903b-2521aeb7b3fc",
+            "type": "addDoc",
+            "props": {
+              "fileId": "08fb84f8-0858-4c7d-b3b1-c04d156588b0",
+              "title": "Number of Islands Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "8edd13b6-c816-44bf-a509-3507842cd7ac",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "25f92b37-86cc-44f5-9f35-b960db9dda90",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ff46661b-8892-41aa-be05-d88ce1b1435f",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(m × n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(m × n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "text": " (Recursion Stack)",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "96a074b2-52bd-43eb-a4de-d1f06f750751",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "92b440c8-136f-4f2e-b3fe-75fb3801db9a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "m",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of rows",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b29dda15-3f20-4327-b53a-ed968d315f36",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of columns",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4c306b2e-2d3d-4aec-8976-2237a47c2997",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "ddc7f51a-139f-4ce3-9524-ef3577f168ac",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d28dc08b-1d3c-446e-bf40-dfbf4af12980",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Whenever you encounter a 2D grid traversal problem involving connected components, think of ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "DFS",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " or ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "BFS",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d22dd4b9-10ee-4dd8-9e1a-15fb11f81de7",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "After visiting a land cell, mark it as visited immediately.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "223c7215-7815-492f-b42f-8ec0f99a2813",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "3f4d8709-bbb0-4146-ae0a-565cc255c29c",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7d21412d-6cdf-4f23-b8bd-cc8290052c9e",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Traverse every cell once.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "51d009e2-da3c-400c-a807-88287e637435",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Start DFS only from unvisited land.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2da2d6e3-422b-4f99-82b4-3e9dc874a58d",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Mark visited cells.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5cdbeb43-4b30-4180-8bbb-7d8b3019ee59",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Each DFS represents one island.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9326826b-3454-4be5-914a-af267d0950d0",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(m × n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785381468672,
+  "updatedAt": 1785381684919
+}

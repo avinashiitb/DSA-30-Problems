@@ -1,0 +1,1113 @@
+{
+  "fileId": "74ea9c24-5e99-4df4-aff6-fcbf70f19117",
+  "_id": "74ea9c24-5e99-4df4-aff6-fcbf70f19117",
+  "title": "Daily Temperatures Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "c65a129e-60c9-4a35-9dd1-bf21f3f3d8ad",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "18. Daily Temperatures",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "77144565-9e5d-40cb-9f65-2a74de46f84d",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e43fc820-4a02-490b-84bd-c49edf95fd83",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given an array of integers ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "temperatures",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " representing the daily temperatures, return an array ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "answer",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " such that:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "7b87b34d-1d57-4d23-91d0-688d66fcc252",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "answer[i]",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " is the number of days you have to wait after the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "iᵗʰ",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " day to get a warmer temperature.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "caba86f7-6f21-41be-b66c-df323d9d22a6",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If there is no future day with a warmer temperature, keep ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "0",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " at that position.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "12c46e54-9cc3-4b46-8cdc-ed6795688355",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "eb92f9c6-0c93-41bb-b255-8ebef306a9fe",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b0d1d294-d0be-48ac-8e68-f1c890f2b160",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "696686a6-217a-4f10-a182-4628626fae3f",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "b8e01f2a-4de2-4f0e-b17a-18924b20ff29",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "33f84e57-c267-454c-8ebb-4c0a5e3b1765",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "8b36522b-a999-4d9b-80f3-3613a14f835a",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "temperatures = [73,74,75,71,69,72,76,73]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "7e171fc6-634f-4659-912f-fd46abc2f9a9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "5ff65631-8e1a-450c-a165-9a46cbd0026f",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[1,1,4,2,1,1,0,0]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "48e7d7f5-4515-4ead-84f8-aa9342c63960",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "56475dff-416a-486c-9fdd-9a85dd996fdf",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "203e5933-df59-4b13-8e45-2fed07a28986",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "f368ec6d-68a3-4b61-abc1-362061c0a9b9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "38f1c696-6664-4858-a6a0-5ce03eb077b9",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "temperatures = [30,40,50,60]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "813c3b9f-d280-40ad-924c-445f80c50030",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "92456bdb-d0f7-47a5-a7a7-67d833be916c",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[1,1,1,0]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "7490af38-08b0-4a46-bcb7-57454f981c68",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "ebf37d9b-d5b9-43a9-8bf1-eac1052246c0",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "1aefb302-4ab0-40af-b925-cf4be718c2e6",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 3",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "40466415-8f02-4343-98ce-96dc35f97c6d",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ac18b214-68a6-42c6-bbaf-1c7f08879299",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "temperatures = [30,60,90]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "bde816c9-bbcf-4880-a560-0a6a0b51b223",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "970a2bd3-57b3-43a0-9a0f-1e1e161de53e",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "[1,1,0]",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "ac06d808-2beb-4263-af8f-aab652d632a9",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "92abe954-bbaf-4eca-8daa-187ba2838d94",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "efc2bf86-5213-4946-a841-96795fc554d2",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use a ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Monotonic Decreasing Stack",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " to keep track of the indices of temperatures.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b5214f86-8923-428c-a442-b1606161c371",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e74df58a-8a27-41d4-8ff2-18c08e4d36eb",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Traverse the temperature array from left to right.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2fe2096f-4151-40c9-969d-ca5e5547382a",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store indices in the stack.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "891a0046-6b1f-470b-96cb-f2317464059f",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "While the current temperature is greater than the temperature at the top index of the stack:",
+                "styles": {}
+              }
+            ],
+            "children": [
+              {
+                "id": "d9ff12fc-4071-42c2-9782-609d825380ce",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Pop the index.",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "93dd15df-8c95-419e-bab2-ad9181bffcc6",
+                "type": "bulletListItem",
+                "props": {
+                  "backgroundColor": "default",
+                  "textColor": "default",
+                  "textAlignment": "left"
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the number of days waited.",
+                    "styles": {}
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "717353a6-9b62-4516-baeb-38cb6b1349c9",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Push the current index onto the stack.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ae77b502-e7b7-4545-a25b-6087b2039031",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Any indices remaining in the stack have no warmer future day, so their answer remains ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "0",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "6b1dc262-b144-46da-a81e-3e4bdc8a3216",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "77f00e3f-7027-428d-984a-8b6b5d202d67",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c5236cb5-3d66-4941-9589-1c8615428eb9",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "temperatures = [73,74,75,71,69,72,76,73]\n\nStack = []\n\n73\n\nStack = [0]\n\n----------------\n\n74 > 73\n\nanswer[0] = 1\n\nStack = [1]\n\n----------------\n\n75 > 74\n\nanswer[1] = 1\n\nStack = [2]\n\n----------------\n\n71\n\nStack = [2,3]\n\n----------------\n\n69\n\nStack = [2,3,4]\n\n----------------\n\n72 > 69\n\nanswer[4] = 1\n\n72 > 71\n\nanswer[3] = 2\n\nStack = [2,5]\n\n----------------\n\n76 > 72\n\nanswer[5] = 1\n\n76 > 75\n\nanswer[2] = 4\n\nStack = [6]\n\n----------------\n\n73\n\nStack = [6,7]\n\nRemaining indices have no warmer day.\n\nFinal Answer\n\n[1,1,4,2,1,1,0,0]",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "b478a402-17f3-46cf-9d6f-25625e62bfeb",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "cc597625-eda3-4e28-ae6b-7c150b47d095",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ad9fb4ac-6a55-4778-9914-d9b04734379e",
+            "type": "addDoc",
+            "props": {
+              "fileId": "157c0810-3d84-4ac4-9507-45762a191ebc",
+              "title": "Daily Temperatures Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "f7890ca9-137b-46dc-9c1c-2ec13fd2d5ef",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "9280e162-c7bc-4b89-89aa-4439538f5f77",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "0c9e8a39-1669-432c-8d6a-911c895e49ad",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "274e6983-6fbd-47fb-9b09-575cb2ac1ae6",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "1968bb31-7866-4531-8f13-6bcb1d3c77e6",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "51b4478f-2e0c-45d3-a06d-b5e47ebce5bf",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Monotonic Stack",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " helps solve \"next greater element\" type problems efficiently.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a5a4ebf0-dcfc-439f-945a-e4ab4f62c755",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Instead of checking every future day, maintain indices in decreasing temperature order and resolve them when a warmer temperature is found.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "050fe0a7-097e-4c16-b4a3-ecffb61d908c",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "b45702c5-0f76-40bb-bed8-1f2c9503b1d8",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2cce0b81-8110-4767-b52e-87e7f0115d1a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use a monotonic decreasing stack.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "3fac6d4e-4e11-4243-8d50-f88201c47435",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Store indices, not temperatures.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4991aab0-14fb-4567-9d14-1d4843a1bb72",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Pop until the current temperature is greater than the stack top.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e83b90b9-0df9-451a-8906-abbed6b5489b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Each index is pushed and popped at most once.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "331e1044-d1df-4234-b379-46963e1e77f0",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785343026283,
+  "updatedAt": 1785347042942
+}

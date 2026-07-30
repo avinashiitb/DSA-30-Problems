@@ -10,7 +10,7 @@
       "data": {
         "code": "import java.util.*;\n\nclass Solution {\n    public void solve(int[] A) {\n        int[] Ans = new int[A.length];\n        Arrays.fill(Ans, 1);\n\n        // Preifx Skip\n        int prefix = 1;\n        for(int i = 0; i< A.length; i++) {\n          Ans[i] *= prefix;\n          prefix *= A[i];\n        }\n\n        // Suffix Skip\n        int suffix = 1;\n        for( int i= A.length - 1; i >= 0; i--) {\n          Ans[i] *= suffix;\n          suffix *= A[i];\n        }\n\n        // Printing Array\n        System.out.print(Arrays.toString(Ans));\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"nums\"); \n        int[] output = Input.getIntArray(\"output\");\n      \n        System.out.println(\"Expected: \"+ Arrays.toString(output));\n      \n        Solution sol = new Solution();\n\n        sol.solve(nums);\n    }\n}",
         "language": "java",
-        "output": "Expected: [60, 40, 30, 24]\n[60, 40, 30, 24]",
+        "output": "Expected: [24, 12, 8, 6]\n[24, 12, 8, 6]",
         "panelOpen": true,
         "wordWrap": false,
         "testCases": [
@@ -191,10 +191,10 @@
             ]
           }
         ],
-        "selectedTestCaseId": "tc_1785045465768_2"
+        "selectedTestCaseId": "tc_1785045465768_0"
       }
     }
   ],
   "createdAt": 1785210624223,
-  "updatedAt": 1785263823286
+  "updatedAt": 1785346431008
 }

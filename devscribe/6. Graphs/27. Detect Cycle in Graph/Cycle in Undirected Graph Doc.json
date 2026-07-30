@@ -1,0 +1,1063 @@
+{
+  "fileId": "58c8c252-dd66-4e66-89b2-d0a4866503c1",
+  "_id": "58c8c252-dd66-4e66-89b2-d0a4866503c1",
+  "title": "Cycle in Undirected Graph Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "310aa86f-a998-493b-93fc-5d84a57ea08c",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "27. Detect Cycle in Undirected Graph",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5cd03fb6-034d-45a5-8272-f39ed7227b8c",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "21bad51e-f17a-4a26-8f3e-6bfb9a63c227",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given an undirected graph with ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "V",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " vertices and an adjacency list, determine whether the graph contains a cycle.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "28346de4-949e-4f0c-9307-dd6c410d8311",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Return:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9cdd3c2e-67f7-4a2a-88fa-e48149b59b95",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "true",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " if the graph contains a cycle.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4b8885c9-41e3-4aba-86c5-871396cb6ff3",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "false",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " otherwise.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9a299e61-5007-4195-91a7-ff9dd96a3be8",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "33150c48-2a3b-4424-9b55-eacde942ec2f",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1bf89458-957b-433f-8b4b-20677eefbf68",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "4583281e-5e27-4e15-bed2-d1f86f348a89",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "e732d557-f215-412f-a1a3-33a77b82e4ff",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "0f638f38-40c3-43cb-8eef-1b31a2273b77",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ffc43357-2df4-41d7-83ae-4fb3812f4e5e",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "V = 5\n\n0 --- 1\n|     |\n|     |\n3 --- 2\n\n4",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "a33063fb-4511-4676-99a1-26bb37dff392",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "359683e0-ae53-484b-a7ae-9019dcd1f7ec",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "true",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "0aa6fc41-5515-4fc1-806c-a0b79e040a70",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "e4bd8d06-8670-4df1-af15-0a23a9ccf0de",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "4628fb98-b049-40d6-adac-78116ca0ef4b",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "d95d7147-4234-4472-8c84-8be52a072516",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "94f6034b-37d1-44d2-a3e4-0fe8e383702f",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "V = 4\n\n0 --- 1 --- 2 --- 3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "48a1c518-9a50-4257-bd42-aed0f046f1a3",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "02e3c7a3-3476-427b-a772-0d22e69bb305",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "false",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "7c7e7e48-6a89-4202-a831-e21ef98c9d39",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fa4a2fc2-d2db-4482-82ca-7ab63d5e5fbd",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e537251e-df18-47e8-9dde-13c0f19e352e",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Depth First Search (DFS)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "825ec285-2c51-4941-af30-d2f56b88a4cd",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d0bc1f62-3600-4ab0-bbda-2c51ff938a23",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Maintain a visited array.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "503f54ee-43fa-4622-be41-cb0705a77209",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Start DFS from every unvisited node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "234ddd40-10c5-4138-900f-db17f77c4b05",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Mark the current node as visited.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f93d98c5-bf0b-41b8-98d4-fb95457e894c",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Visit every neighbor.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ba42d506-12e8-4a0a-a01d-d83fb3ed6147",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Ignore the parent node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "630a87b3-41f8-4590-833d-9f1303cbf3fb",
+            "type": "numberedListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If a visited neighbor is found that is ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "not the parent",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", a cycle exists.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "cce8a622-f18e-4d19-9065-a7ce81ee16c0",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "b4340ea4-2053-4afa-b0d7-fcda9ad27b02",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9dabe697-46e0-437e-ac31-f31a9f8f6a8a",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "Graph\n\n0 ----- 1\n|       |\n|       |\n3 ----- 2\n\nDFS(0)\n\n0 → 1 → 2 → 3\n\n3 has neighbor 0\n\n0 is already visited\nand is NOT parent\n\nCycle Found ✔",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "b94c1379-7a54-4a16-8b25-0065d6a824f2",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "16a36f50-7b8b-48e1-acd5-40bc2072de34",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "8f58698c-e950-48db-bfff-6f356d235f42",
+            "type": "addDoc",
+            "props": {
+              "fileId": "39cd7d18-c387-4615-9623-ac568b7007d8",
+              "title": "Cycle in Undirected Graph Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "e5c0e4e2-55ae-4e95-89b7-914203bb10e0",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "1309cc80-9335-4049-8f5e-5a47b0e00eb6",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1c57ada6-10f5-4e80-be00-eb4ce437068a",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(V + E)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(V)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "b77de39f-c382-460b-bacb-12c45bcd6d05",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e0050589-550b-4fc8-af2e-152416d692d7",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "V",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of vertices",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "daf8ae54-0ff8-4d6f-97c5-149b72d045df",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "E",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Number of edges",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "b8e3acda-9296-4b45-af30-d61798116e4c",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "81d27853-c56e-4911-b94a-e94328e2b9bb",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "f7032e4f-8e02-45f8-bc98-380169595bb7",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "In an undirected graph, revisiting the ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "parent",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " is expected.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "941e9169-2fe0-431f-bdbc-139994b75314",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A cycle exists only if you reach a previously visited node that is ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "not",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " the parent.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "1805bbf1-ab25-4cc2-9d52-bbab1aee7cb5",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "c17e229a-5869-4f87-aa6d-7ceeed75682e",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "91b12d0e-dba8-4023-9492-a0383238192a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "DFS traversal.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "ec3e552f-ee81-4be2-a9e5-06cfb0f10e24",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Maintain visited array.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "abfe8874-6213-472e-8fae-3b8444524a6a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Track parent node.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2703edfc-8fa9-423e-acca-ce5401e64c3b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Ignore parent edge.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e3c521ed-558e-41db-876d-08b1d0f2a31b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(V + E)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785383047583,
+  "updatedAt": 1785383151604
+}

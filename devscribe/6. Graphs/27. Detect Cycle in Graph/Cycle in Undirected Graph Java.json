@@ -1,0 +1,255 @@
+{
+  "fileId": "39cd7d18-c387-4615-9623-ac568b7007d8",
+  "_id": "39cd7d18-c387-4615-9623-ac568b7007d8",
+  "title": "Cycle in Undirected Graph Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "import java.util.*;\n\nclass Solution {\n\n    public boolean hasCycle(int V, List<List<Integer>> adj) {\n\n        boolean[] visited = new boolean[V];\n\n        for (int i = 0; i < V; i++) {\n\n            if (!visited[i]) {\n\n                if (dfs(i, -1, visited, adj)) {\n                    return true;\n                }\n            }\n        }\n\n        return false;\n    }\n\n    private boolean dfs(int node,\n                        int parent,\n                        boolean[] visited,\n                        List<List<Integer>> adj) {\n\n        visited[node] = true;\n\n        for (int neighbor : adj.get(node)) {\n\n            if (!visited[neighbor]) {\n\n                if (dfs(neighbor, node, visited, adj)) {\n                    return true;\n                }\n\n            } else if (neighbor != parent) {\n\n                return true;\n            }\n        }\n\n        return false;\n    }\n\n    // Build adjacency list from edge list\n    private static List<List<Integer>> buildGraph(int V, int[][] edges) {\n\n        List<List<Integer>> adj = new ArrayList<>();\n\n        for (int i = 0; i < V; i++) {\n            adj.add(new ArrayList<>());\n        }\n\n        for (int[] edge : edges) {\n\n            int u = edge[0];\n            int v = edge[1];\n\n            adj.get(u).add(v);\n            adj.get(v).add(u);\n        }\n\n        return adj;\n    }\n\n    public static void main(String[] args) {\n\n        // Custom DevScribe input\n        int V = Input.getInt(\"V\");\n        int[][] edges = Input.get2DIntArray(\"edges\");\n        boolean output = Input.getBool(\"output\");\n\n        List<List<Integer>> graph = buildGraph(V, edges);\n\n        Solution sol = new Solution();\n\n        System.out.println(\"Expected: \" + output);\n        System.out.println(\"Actual: \" + sol.hasCycle(V, graph));\n    }\n}",
+        "language": "java",
+        "output": "Expected: true\nActual: true\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785383093820_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785383093820_0_0",
+                "key": "V",
+                "value": "4"
+              },
+              {
+                "id": "in_1785383093820_0_1",
+                "key": "edges",
+                "value": "[[0,1],[1,2],[2,3],[3,0]]"
+              },
+              {
+                "id": "in_1785383093820_0_2",
+                "key": "output",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785383093820_1_0",
+                "key": "V",
+                "value": "4"
+              },
+              {
+                "id": "in_1785383093820_1_1",
+                "key": "edges",
+                "value": "[[0,1],[1,2],[2,3]]"
+              },
+              {
+                "id": "in_1785383093820_1_2",
+                "key": "output",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785383093820_2_0",
+                "key": "V",
+                "value": "5"
+              },
+              {
+                "id": "in_1785383093820_2_1",
+                "key": "edges",
+                "value": "[[0,1],[1,2],[2,0],[3,4]]"
+              },
+              {
+                "id": "in_1785383093820_2_2",
+                "key": "output",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785383093820_3_0",
+                "key": "V",
+                "value": "5"
+              },
+              {
+                "id": "in_1785383093820_3_1",
+                "key": "edges",
+                "value": "[[0,1],[1,2],[2,3],[3,4]]"
+              },
+              {
+                "id": "in_1785383093820_3_2",
+                "key": "output",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785383093820_4_0",
+                "key": "V",
+                "value": "6"
+              },
+              {
+                "id": "in_1785383093820_4_1",
+                "key": "edges",
+                "value": "[[0,1],[1,2],[2,3],[3,1],[4,5]]"
+              },
+              {
+                "id": "in_1785383093820_4_2",
+                "key": "output",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785383093820_5_0",
+                "key": "V",
+                "value": "1"
+              },
+              {
+                "id": "in_1785383093820_5_1",
+                "key": "edges",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785383093820_5_2",
+                "key": "output",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785383093820_6_0",
+                "key": "V",
+                "value": "2"
+              },
+              {
+                "id": "in_1785383093820_6_1",
+                "key": "edges",
+                "value": "[[0,1]]"
+              },
+              {
+                "id": "in_1785383093820_6_2",
+                "key": "output",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785383093820_7_0",
+                "key": "V",
+                "value": "3"
+              },
+              {
+                "id": "in_1785383093820_7_1",
+                "key": "edges",
+                "value": "[[0,1],[1,2],[2,0]]"
+              },
+              {
+                "id": "in_1785383093820_7_2",
+                "key": "output",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785383093820_8_0",
+                "key": "V",
+                "value": "0"
+              },
+              {
+                "id": "in_1785383093820_8_1",
+                "key": "edges",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785383093820_8_2",
+                "key": "output",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785383093820_9_0",
+                "key": "V",
+                "value": "4"
+              },
+              {
+                "id": "in_1785383093820_9_1",
+                "key": "edges",
+                "value": "[]"
+              },
+              {
+                "id": "in_1785383093820_9_2",
+                "key": "output",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383093820_10",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785383093820_10_0",
+                "key": "V",
+                "value": "2"
+              },
+              {
+                "id": "in_1785383093820_10_1",
+                "key": "edges",
+                "value": "[[0,1],[1,0]]"
+              },
+              {
+                "id": "in_1785383093820_10_2",
+                "key": "output",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785383093820_0"
+      }
+    }
+  ],
+  "createdAt": 1785383050918,
+  "updatedAt": 1785383326088
+}

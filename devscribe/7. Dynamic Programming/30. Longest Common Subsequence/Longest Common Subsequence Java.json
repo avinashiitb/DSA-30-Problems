@@ -1,0 +1,255 @@
+{
+  "fileId": "49c57e4f-b49a-435b-aae5-db215d7197a1",
+  "_id": "49c57e4f-b49a-435b-aae5-db215d7197a1",
+  "title": "Longest Common Subsequence Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "class Solution {\n\n    public int longestCommonSubsequence(String text1, String text2) {\n\n        int m = text1.length();\n        int n = text2.length();\n\n        int[][] dp = new int[m + 1][n + 1];\n\n        for (int i = 1; i <= m; i++) {\n\n            for (int j = 1; j <= n; j++) {\n\n                if (text1.charAt(i - 1) == text2.charAt(j - 1)) {\n\n                    dp[i][j] = 1 + dp[i - 1][j - 1];\n\n                } else {\n\n                    dp[i][j] = Math.max(\n                            dp[i - 1][j],\n                            dp[i][j - 1]\n                    );\n                }\n            }\n        }\n\n        return dp[m][n];\n    }\n\n    public static void main(String[] args) {\n\n        String text1 = Input.getString(\"text1\");\n        String text2 = Input.getString(\"text2\");\n        int output = Input.getInt(\"output\");\n\n        Solution sol = new Solution();\n\n        System.out.println(\"Expected: \" + output);\n        System.out.println(\"Actual: \" + sol.longestCommonSubsequence(text1, text2));\n    }\n}",
+        "language": "java",
+        "output": "Expected: 3\nActual: 3\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785383689201_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785383689201_0_0",
+                "key": "text1",
+                "value": "abcde"
+              },
+              {
+                "id": "in_1785383689201_0_1",
+                "key": "text2",
+                "value": "ace"
+              },
+              {
+                "id": "in_1785383689201_0_2",
+                "key": "output",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785383689201_1_0",
+                "key": "text1",
+                "value": "abc"
+              },
+              {
+                "id": "in_1785383689201_1_1",
+                "key": "text2",
+                "value": "abc"
+              },
+              {
+                "id": "in_1785383689201_1_2",
+                "key": "output",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785383689201_2_0",
+                "key": "text1",
+                "value": "abc"
+              },
+              {
+                "id": "in_1785383689201_2_1",
+                "key": "text2",
+                "value": "def"
+              },
+              {
+                "id": "in_1785383689201_2_2",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785383689201_3_0",
+                "key": "text1",
+                "value": "AGGTAB"
+              },
+              {
+                "id": "in_1785383689201_3_1",
+                "key": "text2",
+                "value": "GXTXAYB"
+              },
+              {
+                "id": "in_1785383689201_3_2",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785383689201_4_0",
+                "key": "text1",
+                "value": "aaaa"
+              },
+              {
+                "id": "in_1785383689201_4_1",
+                "key": "text2",
+                "value": "aa"
+              },
+              {
+                "id": "in_1785383689201_4_2",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785383689201_5_0",
+                "key": "text1",
+                "value": "abcdef"
+              },
+              {
+                "id": "in_1785383689201_5_1",
+                "key": "text2",
+                "value": "fbdamn"
+              },
+              {
+                "id": "in_1785383689201_5_2",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785383689201_6_0",
+                "key": "text1",
+                "value": "stone"
+              },
+              {
+                "id": "in_1785383689201_6_1",
+                "key": "text2",
+                "value": "longest"
+              },
+              {
+                "id": "in_1785383689201_6_2",
+                "key": "output",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1785383689201_7_0",
+                "key": "text1",
+                "value": "leetcode"
+              },
+              {
+                "id": "in_1785383689201_7_1",
+                "key": "text2",
+                "value": "etco"
+              },
+              {
+                "id": "in_1785383689201_7_2",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689201_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785383689201_8_0",
+                "key": "text1",
+                "value": ""
+              },
+              {
+                "id": "in_1785383689201_8_1",
+                "key": "text2",
+                "value": ""
+              },
+              {
+                "id": "in_1785383689201_8_2",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689202_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785383689202_9_0",
+                "key": "text1",
+                "value": ""
+              },
+              {
+                "id": "in_1785383689202_9_1",
+                "key": "text2",
+                "value": "abc"
+              },
+              {
+                "id": "in_1785383689202_9_2",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785383689202_10",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785383689202_10_0",
+                "key": "text1",
+                "value": "abc"
+              },
+              {
+                "id": "in_1785383689202_10_1",
+                "key": "text2",
+                "value": ""
+              },
+              {
+                "id": "in_1785383689202_10_2",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785383689201_0"
+      }
+    }
+  ],
+  "createdAt": 1785383645519,
+  "updatedAt": 1785383694005
+}

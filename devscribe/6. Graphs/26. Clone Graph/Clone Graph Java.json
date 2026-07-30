@@ -1,0 +1,134 @@
+{
+  "fileId": "f9082675-3a86-492c-a3f4-74c9cc7101e7",
+  "_id": "f9082675-3a86-492c-a3f4-74c9cc7101e7",
+  "title": "Clone Graph Java",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "import java.util.*;\n\nclass Node {\n\n    public int val;\n    public List<Node> neighbors;\n\n    public Node() {\n        val = 0;\n        neighbors = new ArrayList<>();\n    }\n\n    public Node(int val) {\n        this.val = val;\n        neighbors = new ArrayList<>();\n    }\n}\n\nclass Solution {\n\n    private Map<Node, Node> map = new HashMap<>();\n\n    public Node cloneGraph(Node node) {\n\n        if (node == null) {\n            return null;\n        }\n\n        if (map.containsKey(node)) {\n            return map.get(node);\n        }\n\n        Node clone = new Node(node.val);\n\n        map.put(node, clone);\n\n        for (Node neighbor : node.neighbors) {\n            clone.neighbors.add(cloneGraph(neighbor));\n        }\n\n        return clone;\n    }\n\n    // Build graph from adjacency list\n    private static Node buildGraph(int[][] adjList) {\n\n        if (adjList.length == 0) {\n            return null;\n        }\n\n        Node[] nodes = new Node[adjList.length];\n\n        for (int i = 0; i < adjList.length; i++) {\n            nodes[i] = new Node(i + 1);\n        }\n\n        for (int i = 0; i < adjList.length; i++) {\n\n            for (int neighbor : adjList[i]) {\n                nodes[i].neighbors.add(nodes[neighbor - 1]);\n            }\n        }\n\n        return nodes[0];\n    }\n\n    // Convert graph back to adjacency list\n    private static List<List<Integer>> toAdjList(Node node) {\n\n        List<List<Integer>> result = new ArrayList<>();\n\n        if (node == null) {\n            return result;\n        }\n\n        Map<Node, Integer> visited = new HashMap<>();\n        Queue<Node> queue = new LinkedList<>();\n\n        queue.offer(node);\n        visited.put(node, 1);\n\n        while (!queue.isEmpty()) {\n\n            Node current = queue.poll();\n\n            while (result.size() < current.val) {\n                result.add(new ArrayList<>());\n            }\n\n            for (Node neighbor : current.neighbors) {\n\n                result.get(current.val - 1).add(neighbor.val);\n\n                if (!visited.containsKey(neighbor)) {\n                    visited.put(neighbor, neighbor.val);\n                    queue.offer(neighbor);\n                }\n            }\n        }\n\n        return result;\n    }\n\n    public static void main(String[] args) {\n\n        // Custom DevScribe input\n        int[][] adjList = Input.get2DIntArray(\"adjList\");\n\n        Node graph = buildGraph(adjList);\n\n        Solution sol = new Solution();\n\n        Node clone = sol.cloneGraph(graph);\n\n        System.out.println(toAdjList(clone));\n    }\n}",
+        "language": "java",
+        "output": "[[2, 4], [1, 3], [2, 4], [1, 3]]\n",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1785382172096_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1785382172096_0_0",
+                "key": "adjList",
+                "value": "[[2,4],[1,3],[2,4],[1,3]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1785382172096_1_0",
+                "key": "adjList",
+                "value": "[[]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1785382172096_2_0",
+                "key": "adjList",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1785382172096_3_0",
+                "key": "adjList",
+                "value": "[[2],[1]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1785382172096_4_0",
+                "key": "adjList",
+                "value": "[[2,3],[1],[1]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1785382172096_5_0",
+                "key": "adjList",
+                "value": "[[2],[1,3],[2,4],[3]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1785382172096_6_0",
+                "key": "adjList",
+                "value": "[[2,3,4],[1],[1],[1]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_7",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1785382172096_7_0",
+                "key": "adjList",
+                "value": "[]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172096_8",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1785382172096_8_0",
+                "key": "adjList",
+                "value": "[[]]"
+              }
+            ]
+          },
+          {
+            "id": "tc_1785382172097_9",
+            "name": "Edge Case 3",
+            "inputs": [
+              {
+                "id": "in_1785382172096_9_0",
+                "key": "adjList",
+                "value": "[[2],[1]]"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1785382172096_0"
+      }
+    }
+  ],
+  "createdAt": 1785381884781,
+  "updatedAt": 1785382924002
+}

@@ -1,0 +1,1152 @@
+{
+  "fileId": "33882cbd-1103-4732-ae00-584f87966a53",
+  "_id": "33882cbd-1103-4732-ae00-584f87966a53",
+  "title": "Longest Common Subsequence Doc",
+  "fileType": "document-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "document-editor",
+      "data": {
+        "blocks": [
+          {
+            "id": "9365ce15-071c-471c-bc29-7c8601053ed1",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 1,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "30. Longest Common Subsequence",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "02421335-6af4-494f-bfa5-06637d371d25",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Problem",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "fc7febc9-86b7-4e63-bfa0-412161ec7f9e",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Given two strings ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "text1",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " and ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "text2",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ", return the length of their ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Longest Common Subsequence (LCS)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "c9f8be44-46ed-4900-8e81-f9d865fe1e4d",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "A subsequence is a sequence that can be derived from another sequence by deleting some or no characters without changing the order of the remaining characters.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "20f83577-d040-4f3b-b81d-31dbeb808c47",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "0d3c5872-0bc9-4b2f-b524-a6636927b47d",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Example",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "9a1d5be0-c5e8-4d15-9543-116d5edebe6b",
+            "type": "column_list",
+            "props": {},
+            "children": [
+              {
+                "id": "b9a47d0f-f8af-48be-b1eb-ee8b317098d7",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "141f29e5-c66d-422f-8ad0-41dd1f5d448a",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 1",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "2eabfea2-d7b7-4961-8f0d-c442ee2bfe72",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "2bd92b1f-19a9-4e22-a76f-66f6a5507cb2",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "text1 = \"abcde\"\ntext2 = \"ace\"",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "b1c84a68-f237-47dd-9288-5f22183d90da",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "273b5211-186b-47c3-abe7-5a6a9f18fbb7",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "bde248b0-9586-41f8-ab23-135c4becc7e3",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explanation",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "2424aac3-8166-4526-a1da-2093fbc78070",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "The longest common subsequence is:\n\nace\n\nLength = 3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "b100d291-d6b7-4402-99f4-a6532169c170",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "bc0aa88d-1bc0-460c-b335-78aa611255c9",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "70b883a5-2ead-435f-bc68-74321ccce38b",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 2",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "c9bd3458-06cc-4a89-9087-8d569b21b8a6",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ae7dff28-e133-408c-b657-e6e710596d64",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "text1 = \"abc\"\ntext2 = \"abc\"",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "2be68519-c93b-4500-b4d8-3cf989bdf325",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "ec11fc6f-ea4a-4c97-be19-e967c71e100a",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "3",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "32b73e39-bd75-41d6-9f1b-c72c3956ddce",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "9c9f900b-915e-42ab-b51b-5ca70cfc2f0c",
+                "type": "column",
+                "props": {
+                  "width": "1"
+                },
+                "children": [
+                  {
+                    "id": "3f235834-640f-456f-b143-e928574f53ea",
+                    "type": "heading",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left",
+                      "level": 3,
+                      "isToggleable": false
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Example 3",
+                        "styles": {}
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "52e455c9-6565-4bf2-b593-e9e17faeb338",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "14d9a210-7e2d-4e3c-8e8f-66b43de74212",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "text1 = \"abc\"\ntext2 = \"def\"",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "2362b4a0-2015-4d06-869b-0fe0afbab14a",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output",
+                        "styles": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "3a127823-18c8-4dd3-940e-3717a4410027",
+                    "type": "codeBlock",
+                    "props": {
+                      "language": "javascript",
+                      "code": "0",
+                      "wordWrap": "true"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "1f766892-ebda-41f0-a346-b6ffc7491272",
+                    "type": "paragraph",
+                    "props": {
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    },
+                    "content": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "d382d7e8-574d-4d8b-9d7a-de27310b0298",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Approach",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "2786bac1-4bc2-4352-9682-ae63f0759414",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Use ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "Dynamic Programming",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": ".",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "d243d927-d436-4fce-a3d0-a509a44f6301",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Let:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "821183c9-a0c6-42c6-9590-10d96a8bfb7f",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[i][j]\n\nLength of the longest common subsequence\nbetween\n\ntext1[0...i-1]\ntext2[0...j-1]",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "6444782d-dc95-40fd-be75-62bbb339c84e",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 3,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Transition",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "be21cd9e-e5e8-4987-bb8c-b3e5f35a64b4",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "If the characters match:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "5d4dedf0-10d8-45ef-b716-35d1680f2035",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[i][j] = 1 + dp[i-1][j-1]",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "7b638704-4119-416b-bbb1-737f5753d839",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Otherwise:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4ab3ecc8-d55d-4196-923e-8ad76b228247",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[i][j] = max(\n\ndp[i-1][j],\n\ndp[i][j-1]\n\n)",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "a0a0c164-6568-4935-80fd-441498af53fe",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "The answer is stored in:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "420f79e0-d08e-42de-9655-53368061d0ff",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "dp[m][n]",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "7b2794f2-2841-4273-9781-936d219b1c3c",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "where",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a3b5c15d-70a7-40e1-90ca-991d9a821b76",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "m = text1.length()",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "067a3537-f6e8-47e9-9dd7-7db59fb91ad2",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "n = text2.length()",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a4a56e43-5902-4d5b-9940-f3ec8f27e23d",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "56aab12a-3c73-4f63-97a1-3050b81ebb62",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dry Run",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a9cdafda-19c8-4746-9e04-a88fff44867a",
+            "type": "codeBlock",
+            "props": {
+              "language": "javascript",
+              "code": "text1 = \"abcde\"\n\ntext2 = \"ace\"\n\nMatch a\n\nLCS = 1\n\nMatch c\n\nLCS = 2\n\nMatch e\n\nLCS = 3\n\nAnswer = 3",
+              "wordWrap": "true"
+            },
+            "children": []
+          },
+          {
+            "id": "fdd045b8-9b95-48a5-ab3c-4f8132ed5d8d",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "eea7800d-cc55-4ae6-8f6f-4bc573177739",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Java Solution",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "62ab5e00-61ee-4100-b4b4-924f0270c5c0",
+            "type": "addDoc",
+            "props": {
+              "fileId": "49c57e4f-b49a-435b-aae5-db215d7197a1",
+              "title": "Longest Common Subsequence Java",
+              "fileType": "code-editor",
+              "embedMode": "embed"
+            },
+            "children": []
+          },
+          {
+            "id": "8a890f85-48a2-422f-ac28-8ec411a3410b",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "67d02f46-3d84-4cc6-8102-35e9552dbc3c",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Complexity Analysis",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "27fd3f33-1e6f-4935-9033-ec1c3923969a",
+            "type": "table",
+            "props": {
+              "textColor": "default"
+            },
+            "content": {
+              "type": "tableContent",
+              "columnWidths": [
+                null,
+                null
+              ],
+              "headerRows": 1,
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Complexity",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Value",
+                          "styles": {}
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Time Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(m × n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Space Complexity",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    },
+                    {
+                      "type": "tableCell",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "O(m × n)",
+                          "styles": {
+                            "bold": true
+                          }
+                        }
+                      ],
+                      "props": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "backgroundColor": "default",
+                        "textColor": "default",
+                        "textAlignment": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "id": "608362b9-0e3c-4674-b72e-b5f1a21fb52a",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Where:",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e56233b5-3ad6-45bd-be9d-5bebd511a09b",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "m",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Length of text1",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "a72582b7-5c6b-46ce-85da-462865ce24f9",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "n",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " = Length of text2",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "4e18c887-7a35-4492-9d7d-ff2cda68ad7b",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "c22450bd-7491-47ea-aa46-413fea242a3a",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Interview Tip",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "55042f48-18da-451f-8f9a-ac2956312781",
+            "type": "paragraph",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "LCS is one of the most important Dynamic Programming problems and forms the basis for problems like Edit Distance, Diff Utilities, and Longest Palindromic Subsequence.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "449a5a86-5db1-43d3-9c89-6c42828f004b",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "a4cd4ae7-c8d1-4941-9529-55d34df5adf2",
+            "type": "heading",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left",
+              "level": 2,
+              "isToggleable": false
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Key Takeaways",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "605b4bae-83ce-4c2a-a83c-b8f241c94385",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Dynamic Programming problem.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "83ca4e54-87d5-4ceb-a809-000ced061078",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Compare characters one by one.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "76d0c788-0fe9-431e-9027-1ff7fd01ce88",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Build the DP table bottom-up.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "e7d24365-56e7-4891-aade-f5bb3b26373a",
+            "type": "bulletListItem",
+            "props": {
+              "backgroundColor": "default",
+              "textColor": "default",
+              "textAlignment": "left"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Runs in ",
+                "styles": {}
+              },
+              {
+                "type": "text",
+                "text": "O(m × n)",
+                "styles": {
+                  "bold": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " time.",
+                "styles": {}
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": 1785383640537,
+  "updatedAt": 1785383766529
+}
