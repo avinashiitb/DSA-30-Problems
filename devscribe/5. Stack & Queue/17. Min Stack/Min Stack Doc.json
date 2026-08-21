@@ -1,6 +1,6 @@
 {
-  "fileId": "76d8b02c-aadc-49ec-86e9-740539966d14",
-  "_id": "76d8b02c-aadc-49ec-86e9-740539966d14",
+  "fileId": "ba23bca9-3152-43ed-9ebc-1f3059123fba",
+  "_id": "ba23bca9-3152-43ed-9ebc-1f3059123fba",
   "title": "Min Stack Doc",
   "fileType": "document-editor",
   "version": "1.0.0",
@@ -954,6 +954,6 @@
       }
     }
   ],
-  "createdAt": 1785297449792,
-  "updatedAt": 1785298426964
+  "createdAt": 1787162692040,
+  "updatedAt": 1787162692040
 }

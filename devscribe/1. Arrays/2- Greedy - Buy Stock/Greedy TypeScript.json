@@ -1,0 +1,184 @@
+{
+  "fileId": "bec965fc-efd9-46a0-b36d-325c8e3182e4",
+  "_id": "bec965fc-efd9-46a0-b36d-325c8e3182e4",
+  "title": "Greedy TypeScript",
+  "fileType": "code-editor",
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "type": "code-editor",
+      "data": {
+        "code": "class Solution {\n\n    public solve(A: number[]): number {\n\n        let Min = Infinity;\n        let Max = A[0];\n\n        let Profit = 0;\n\n        if (A.length === 0) {\n            return 0;\n        }\n\n        for (let i = 0; i < A.length; i++) {\n\n            if (A[i] < Min) {\n                Min = A[i];\n                Max = A[i];\n            } else if (Max < A[i]) {\n                Max = A[i];\n            }\n\n            Profit = Math.max(Profit, Max - Min);\n        }\n\n        return Profit;\n    }\n\n    // Test the code\n    public static main(): void {\n\n        // This is custom code to read Test case in DevScribe\n        const prices = Input.getIntArray(\"prices\");\n        const output = Input.getInt(\"output\");\n\n        console.log(\"Expected: \" + output);\n\n        const sol = new Solution();\n\n        const Profit = sol.solve(prices);\n\n        console.log(\"Profit: \" + Profit);\n    }\n}\n\nSolution.main();",
+        "language": "typescript",
+        "output": "Expected: 5\nProfit: 5",
+        "panelOpen": true,
+        "wordWrap": false,
+        "testCases": [
+          {
+            "id": "tc_1786740518376_0",
+            "name": "Test Case 1",
+            "inputs": [
+              {
+                "id": "in_1786740518376_0_0",
+                "key": "prices",
+                "value": "[7,1,5,3,6,4]"
+              },
+              {
+                "id": "in_1786740518376_0_1",
+                "key": "output",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_1",
+            "name": "Test Case 2",
+            "inputs": [
+              {
+                "id": "in_1786740518376_1_0",
+                "key": "prices",
+                "value": "[7,6,4,3,1]"
+              },
+              {
+                "id": "in_1786740518376_1_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_2",
+            "name": "Test Case 3",
+            "inputs": [
+              {
+                "id": "in_1786740518376_2_0",
+                "key": "prices",
+                "value": "[1,2,3,4,5]"
+              },
+              {
+                "id": "in_1786740518376_2_1",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_3",
+            "name": "Test Case 4",
+            "inputs": [
+              {
+                "id": "in_1786740518376_3_0",
+                "key": "prices",
+                "value": "[5]"
+              },
+              {
+                "id": "in_1786740518376_3_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_4",
+            "name": "Test Case 5",
+            "inputs": [
+              {
+                "id": "in_1786740518376_4_0",
+                "key": "prices",
+                "value": "[2,4,1,7]"
+              },
+              {
+                "id": "in_1786740518376_4_1",
+                "key": "output",
+                "value": "6"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_5",
+            "name": "Test Case 6",
+            "inputs": [
+              {
+                "id": "in_1786740518376_5_0",
+                "key": "prices",
+                "value": "[3,2,6,5,0,3]"
+              },
+              {
+                "id": "in_1786740518376_5_1",
+                "key": "output",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_6",
+            "name": "Test Case 7",
+            "inputs": [
+              {
+                "id": "in_1786740518376_6_0",
+                "key": "prices",
+                "value": "[2,1,2,1,0,1,2]"
+              },
+              {
+                "id": "in_1786740518376_6_1",
+                "key": "output",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_7",
+            "name": "Test Case 8",
+            "inputs": [
+              {
+                "id": "in_1786740518376_7_0",
+                "key": "prices",
+                "value": "[10,9,8,7,6,5]"
+              },
+              {
+                "id": "in_1786740518376_7_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_8",
+            "name": "Edge Case 1",
+            "inputs": [
+              {
+                "id": "in_1786740518376_8_0",
+                "key": "prices",
+                "value": "[]"
+              },
+              {
+                "id": "in_1786740518376_8_1",
+                "key": "output",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "id": "tc_1786740518376_9",
+            "name": "Edge Case 2",
+            "inputs": [
+              {
+                "id": "in_1786740518376_9_0",
+                "key": "prices",
+                "value": "[1,100]"
+              },
+              {
+                "id": "in_1786740518376_9_1",
+                "key": "output",
+                "value": "99"
+              }
+            ]
+          }
+        ],
+        "selectedTestCaseId": "tc_1786740518376_0"
+      }
+    }
+  ],
+  "createdAt": 1787162692040,
+  "updatedAt": 1787162692040
+}
