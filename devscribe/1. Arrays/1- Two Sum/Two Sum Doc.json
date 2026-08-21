@@ -1,6 +1,6 @@
 {
-  "fileId": "923b1391-868b-40b6-b8c5-51830fa79598",
-  "_id": "923b1391-868b-40b6-b8c5-51830fa79598",
+  "fileId": "ffe835a9-49d5-41a7-9995-afad20f5ff0e",
+  "_id": "ffe835a9-49d5-41a7-9995-afad20f5ff0e",
   "title": "Two Sum Doc",
   "fileType": "document-editor",
   "version": "1.0.0",
@@ -330,7 +330,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Approach 1",
+                "text": "Approach",
                 "styles": {}
               }
             ],
@@ -689,6 +689,6 @@
       }
     }
   ],
-  "createdAt": 1787162692040,
-  "updatedAt": 1787340087725
+  "createdAt": 1787342384443,
+  "updatedAt": 1787342384443
 }

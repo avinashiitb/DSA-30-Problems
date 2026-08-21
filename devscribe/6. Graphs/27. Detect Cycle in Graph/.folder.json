@@ -1,8 +1,8 @@
 {
-  "folderId": "94237a50-e166-42fd-b0be-c220a69e3f4f",
-  "_id": "94237a50-e166-42fd-b0be-c220a69e3f4f",
-  "parentId": "d2a7d568-7f15-4fce-8f6a-c6ebadd4c699",
+  "folderId": "02634ced-d90d-4226-91aa-bea1117d96ae",
+  "_id": "02634ced-d90d-4226-91aa-bea1117d96ae",
+  "parentId": "f302655b-f36a-437a-b15d-5ec7687aa3f5",
   "name": "27. Detect Cycle in Graph",
-  "createdAt": 1787162692040,
-  "updatedAt": 1787162692040
+  "createdAt": 1787342384443,
+  "updatedAt": 1787342384443
 }
