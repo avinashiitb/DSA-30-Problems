@@ -8,9 +8,9 @@
     {
       "type": "code-editor",
       "data": {
-        "code": "import java.util.*;\n\nclass Solution {\n    public void solve(int[] A, int target) {\n        HashMap<Integer, Integer> Map = new HashMap<>();\n\n        for(int i = 0; i< A.length; i++) {\n          int X = target - A[i];\n          if(Map.containsKey(X)) {\n            int j = Map.get(X);\n            System.out.println(\"Pair: [\" + j + \", \" + i + \"]\");\n          }\n          Map.put(A[i], i);\n        }\n        \n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"nums\"); \n        int target = Input.getInt(\"target\");\n        int[] output = Input.getIntArray(\"output\");\n      \n        System.out.println(\"Expected: \"+ Arrays.toString(output));\n      \n        Solution sol = new Solution();\n\n        sol.solve(nums, target);\n    }\n}",
+        "code": "import java.util.*;\n\nclass Solution {\n    public void solve(int[] A, int target) {\n        HashMap<Integer, Integer> Map = new HashMap<>();\n\n        for(int i = 0; i< A.length; i++) {\n          int X = target - A[i];\n          if(Map.containsKey(X)) {\n            int j = Map.get(X);\n            System.out.println(\"Pair: [\" + j + \", \" + i + \"]\");\n          }\n          Map.put(A[i], i);\n        }\n\n      System.out.println(\"Completed\");\n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"nums\"); \n        int target = Input.getInt(\"target\");\n        int[] output = Input.getIntArray(\"output\");\n      \n        System.out.println(\"Expected: \"+ Arrays.toString(output));\n      \n        Solution sol = new Solution();\n\n        sol.solve(nums, target);\n    }\n}",
         "language": "java",
-        "output": "Expected: [0, 1]\nPair: [0, 1]\n",
+        "output": "Expected: [0, 1]\nPair: [0, 1]\nCompleted\n",
         "panelOpen": true,
         "wordWrap": false,
         "testCases": [
@@ -293,5 +293,5 @@
     }
   ],
   "createdAt": 1787162692040,
-  "updatedAt": 1787338619465
+  "updatedAt": 1787340202072
 }
