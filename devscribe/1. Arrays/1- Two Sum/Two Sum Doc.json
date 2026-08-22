@@ -124,7 +124,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Example ( Testing )",
+                "text": "Example",
                 "styles": {}
               }
             ],
@@ -690,5 +690,5 @@
     }
   ],
   "createdAt": 1787342384443,
-  "updatedAt": 1787375006021
+  "updatedAt": 1787376644604
 }
