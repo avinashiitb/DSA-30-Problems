@@ -10,7 +10,7 @@
       "data": {
         "code": "import java.util.*;\n\nclass Solution {\n    public void solve(int[] A, int target) {\n        HashMap<Integer, Integer> Map = new HashMap<>();\n\n        for(int i = 0; i< A.length; i++) {\n          int X = target - A[i];\n          if(Map.containsKey(X)) {\n            int j = Map.get(X);\n            System.out.println(\"Pair: [\" + j + \", \" + i + \"]\");\n          }\n          Map.put(A[i], i);\n        }\n        \n    }\n\n    // Test the code\n    public static void main(String[] args) {\n        // This is custom code to read Test case in Devscribe\n        int[] nums = Input.getIntArray(\"nums\"); \n        int target = Input.getInt(\"target\");\n        int[] output = Input.getIntArray(\"output\");\n      \n        System.out.println(\"Expected: \"+ Arrays.toString(output));\n      \n        Solution sol = new Solution();\n\n        sol.solve(nums, target);\n    }\n}",
         "language": "java",
-        "output": "Error: Error invoking remote method 'run-java-code': ❌ Failed to detect JAVA_HOME (/usr/libexec/java_home): Command failed: /usr/libexec/java_home\nThe operation couldn’t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output": "Expected: [0, 1]\nPair: [0, 1]\n",
         "panelOpen": true,
         "wordWrap": false,
         "testCases": [
@@ -293,5 +293,5 @@
     }
   ],
   "createdAt": 1787342384443,
-  "updatedAt": 1787392222816
+  "updatedAt": 1787392602417
 }
