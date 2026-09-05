@@ -1,6 +1,6 @@
 {
-  "fileId": "2e4ce09b-5bda-4a2e-a8f1-6affc351bd93",
-  "_id": "2e4ce09b-5bda-4a2e-a8f1-6affc351bd93",
+  "fileId": "cf2f267f-9580-40da-bd99-2ba530b311d3",
+  "_id": "cf2f267f-9580-40da-bd99-2ba530b311d3",
   "title": "Greedy Stock",
   "fileType": "document-editor",
   "version": "1.0.0",
@@ -926,6 +926,6 @@
       }
     }
   ],
-  "createdAt": 1787342384443,
-  "updatedAt": 1787392610033
+  "createdAt": 1788452537577,
+  "updatedAt": 1788452537577
 }

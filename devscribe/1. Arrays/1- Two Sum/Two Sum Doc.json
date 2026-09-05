@@ -330,7 +330,7 @@
             "content": [
               {
                 "type": "text",
-                "text": "Approach ",
+                "text": "Approach",
                 "styles": {}
               }
             ],
@@ -689,6 +689,6 @@
       }
     }
   ],
-  "createdAt": 1787342384443,
-  "updatedAt": 1787400706732
+  "createdAt": 1788630900798,
+  "updatedAt": 1788630900798
 }
